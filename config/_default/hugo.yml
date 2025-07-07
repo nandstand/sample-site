@@ -1,0 +1,8 @@
+baseURL: https://nandstand.github.io/sample-site/
+languageCode: en-us
+title: Sample Documentation
+theme: docsy
+frontmatter:
+  format: yaml
+enableEmoji: true
+enableGitInfo: true
