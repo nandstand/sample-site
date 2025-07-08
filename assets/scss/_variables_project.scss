@@ -1,0 +1,37 @@
+$primary: #ffffff !default;
+$secondary: #2D70DE !default;
+$light: #ffffff !default;
+$grey: #888 !default;
+$body-bg: #ffffff !default;
+$body-color: #000000 !default;
+
+.td-navbar {
+    background-color: #ffffff !important;
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,.2) !important;
+    border-bottom: none !important;
+}
+
+.navbar-brand {
+    color: black !important;
+}
+
+.nav-link {
+    margin-right: 20px !important;
+    color: #000000 !important;
+}
+
+.nav-link:hover {
+    color: #666666 !important;
+}
+
+.nav-shadow {
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+}
+
+.navbar-bg-onscroll {
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+}
+
+.td-main main {
+    padding-top: 80px !important;
+}
