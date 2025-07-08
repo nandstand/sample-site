@@ -1,10 +1,13 @@
 baseURL: https://nandstand.github.io/sample-site/
-languageCode: en-us
 title: Sample Documentation
-frontmatter:
-  format: yaml
-enableEmoji: true
+languageCode: en-us
+
 enableGitInfo: true
+
+contentDir: content
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: false
+
 module:
   proxy: direct
   hugoVersion:
@@ -13,3 +16,33 @@ module:
   imports:
     - path: github.com/google/docsy
       disable: false
+
+markup:
+  goldmark:
+    parser:
+      attribute:
+        block: true
+    renderer:
+      unsafe: true
+  highlight:
+    style: tango
+
+menu:
+  main:
+    - name: GitHub
+      url: https://github.com/nandstand/
+      weight: 20
+    - name: Personal Site
+      url: https://nandstand.github.io/site/
+      weight: 30
+
+params:
+  gcs_engine_id: d72aa9b2712488cc3
+  sidebar_search_disable: false
+  copyright:
+    authors: Christian Fuller
+  ui:
+    breadcrumb_disable: false
+    navbar_logo: false
+    sidebar_menu_compact: false
+    sidebar_menu_foldable: true
