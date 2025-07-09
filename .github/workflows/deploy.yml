@@ -1,0 +1,52 @@
+name: deploy
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write 
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Fetch all history for git info and lastmod
+      - uses: peaceiris/actions-hugo@v3
+        with: 
+          hugo-version: '0.147.1' 
+          extended: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+          cache-dependency-path: '**/package-lock.json'
+      - name: install node dependencies
+        run: npm ci
+      - name: generate site 
+        run: hugo
+      - name: upload site artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: site
+          path: public
+          retention-days: 1 
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: download site build
+        uses: actions/download-artifact@v4
+        with: 
+          name: site 
+          path: ./public
+      - name: deploy site to pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          publish_dir: ./public
+          publish_branch: gh-pages
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          force_orphan: true
