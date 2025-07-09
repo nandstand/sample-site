@@ -1,9 +1,9 @@
 ---
 date: '2025-07-08T15:44:17-05:00'
 draft: true
-title: 'Landing page'
+title: 'Welcome'
 description: 'Landing page description'
-linkTitle: 'Documentation'
+linkTitle: 'Welcome'
 type: 'docs'
 ---
 
