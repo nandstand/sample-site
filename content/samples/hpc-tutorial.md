@@ -3,6 +3,7 @@ date: '2025-07-08T15:59:14-05:00'
 draft: true
 title: 'Develop and test your first feature on the HPC cluster'
 linkTitle: 'Develop and test your first feature on the HPC cluster'
+description: 'Learn how to navigate the CAQRN project codebase and submit test jobs from your sandbox environment.'
 type: 'docs'
 weight: 10
 ---
@@ -10,7 +11,7 @@ weight: 10
 The Coastal Air Quality Research Network (CAQRN) project is hosted on a Red Hat Enterprise Linux 8.10 high-performance computing (HPC) cluster.
 Batch processing jobs are submitted from the CAQRN development and production servers to the cluster's compute nodes using orchestration scripts containing Slurm commands.
 
-Developers submit test jobs from their sandbox environments on the development server to be executed on the HPC cluster's compute nodes.
+Developers submit test jobs from their sandbox environments on the development server to be run on the HPC cluster's compute nodes.
 
 ## Before you begin
 
@@ -41,7 +42,7 @@ To add the logging feature, you need to modify an existing file in the codebase.
 cd ~/caqrn-sandbox/code/caqrn-processing
 ```
 
-There is a special branch that contains code specific to this tutorial.
+The `onboarding` branch contains code specific to this tutorial.
 
 3. Check out the `onboarding` branch from the remote repository:
 
