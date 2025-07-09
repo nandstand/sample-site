@@ -3,11 +3,10 @@ date: '2025-07-08T15:59:14-05:00'
 draft: true
 title: 'Quickstart'
 linkTitle: 'Quickstart'
+description: 'Set up your sandbox on the Coastal Air Quality Research Network (CAQRN) development server in under 10 minutes.'
 type: 'docs'
 weight: 5
 ---
-
-Set up your sandbox on the Coastal Air Quality Research Network (CAQRN) development server in under 10 minutes.
 
 ## What you'll set up
 
