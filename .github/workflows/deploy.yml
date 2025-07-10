@@ -34,6 +34,26 @@ jobs:
           path: public
           retention-days: 1 
 
+  link-check:
+    needs: [build, deploy]
+    runs-on: ubuntu-latest
+    steps:
+      - name: download site build
+        uses: actions/download-artifact@v4
+        with: 
+          name: site 
+          path: ./public
+      - name: link check (lychee) | link check live site
+        uses: lycheeverse/lychee-action@v2.4.1
+        with:
+          args: >
+            --base https://nandstand.github.io/sample-site/
+            --timeout 20
+            --no-progress
+            --verbose
+            --accept 200,206
+            './public/**/*.html'
+ 
   deploy:
     needs: build
     runs-on: ubuntu-latest
