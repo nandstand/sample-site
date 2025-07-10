@@ -5,3 +5,4 @@ no-inline-html: false          # allow raw HTML/shortcodes
 line-length: false             # ignore long lines
 first-line-h1: false           # use front-matter title
 fenced-code-language: false    # allow code blocks without specifying language
+ol-prefix: false               # the way we have steps written in some docs breaks this
