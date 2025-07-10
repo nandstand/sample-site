@@ -86,5 +86,3 @@ pip install -r requirements.txt
 You now have an isolated sandbox where you can make code changes, install and update dependencies, and test using live data shared on the development server.
 
 ## Next steps
-
-- 
