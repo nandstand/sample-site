@@ -1,0 +1,72 @@
+name: ci
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Fetch all history for git info and lastmod
+      - uses: peaceiris/actions-hugo@v3
+        with: 
+          hugo-version: '0.147.1' 
+          extended: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+          cache-dependency-path: '**/package-lock.json'
+      - name: install node dependencies
+        run: npm ci        
+      - name: mirror dir structure of prod site 
+        run: mkdir -p site-root
+      - name: generate ci site build
+        run: >
+          hugo  
+          --baseURL "http://localhost:8080/site/"
+          --destination site-root/site
+      - name: upload site
+        uses: actions/upload-artifact@v4
+        with:
+          name: site
+          path: ./site-root
+          retention-days: 1
+
+  lint-md:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout site source
+        uses: actions/checkout@v4
+      - name: run markdown linter
+        uses: DavidAnson/markdownlint-cli2-action@v19.1.0
+        with:
+          globs: '**/*.md'
+          config: .markdownlint.yaml
+
+  link-check:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: download site
+        uses: actions/download-artifact@v4
+        with:
+          name: site
+          path: ./site-root
+      - name: serve site
+        run: npx http-server site-root -p 8080 --silent &
+      - name: link check (lychee)
+        uses: lycheeverse/lychee-action@v2.4.1
+        with:
+          args: >
+            --base "http://localhost:8080/sample-site/"
+            --no-progress
+            --verbose
+            --accept 200,206
+            './site-root/**/*.html'
