@@ -34,6 +34,17 @@ jobs:
           path: public
           retention-days: 1 
 
+  lint-md:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout site source
+        uses: actions/checkout@v4
+      - name: run markdown linter
+        uses: DavidAnson/markdownlint-cli2-action@v19.1.0
+        with:
+          globs: '**/*.md'
+          config: .markdownlint.yaml
+
   link-check:
     needs: [build, deploy]
     runs-on: ubuntu-latest
