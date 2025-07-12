@@ -1,4 +1,4 @@
-baseURL: https://nandstand.github.io/sample-site/
+baseURL: https://samples.christianf.io/
 title: Sample Documentation
 languageCode: en-us
 
@@ -33,7 +33,7 @@ menu:
       url: https://github.com/nandstand/sample-site
       weight: 20
     - name: Personal Site
-      url: https://nandstand.github.io/site/
+      url: https://christianf.io/
       weight: 30
 
 params:
