@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Welcome on Sample Documentation</title><link>https://nandstand.github.io/sample-site/</link><description>Recent content in Welcome on Sample Documentation</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 09 Jul 2025 20:53:58 -0500</lastBuildDate><atom:link href="https://nandstand.github.io/sample-site/index.xml" rel="self" type="application/rss+xml"/><item><title>Quickstart</title><link>https://nandstand.github.io/sample-site/samples/quickstart/</link><pubDate>Tue, 08 Jul 2025 15:59:14 -0500</pubDate><guid>https://nandstand.github.io/sample-site/samples/quickstart/</guid><description>&lt;h2 id="what-youll-set-up">What you&amp;rsquo;ll set up&lt;/h2>
+&lt;p>A personal sandbox environment for developing, testing, and running HPC jobs.
+You&amp;rsquo;ll set up directories, clone repositories, and create an isolated Python environment.&lt;/p>
+&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
+&lt;p>Before you start, you&amp;rsquo;ll need:&lt;/p>
+&lt;ul>
+&lt;li>Access to the CAQRN development server&lt;/li>
+&lt;li>Python 3.9 installed&lt;/li>
+&lt;li>Git configured with access to &lt;code>gitlab.caqrn.internal&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;h2 id="create-your-workspace">Create your workspace&lt;/h2>
+&lt;p>Set up the project directory structure.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#204a87">cd&lt;/span> ~
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>mkdir -p caqrn-sandbox/&lt;span style="color:#ce5c00;font-weight:bold">{&lt;/span>code,data,logs&lt;span style="color:#ce5c00;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>mkdir -p caqrn-sandbox/data/&lt;span style="color:#ce5c00;font-weight:bold">{&lt;/span>processing,products&lt;span style="color:#ce5c00;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>mkdir -p caqrn-sandbox/logs/&lt;span style="color:#ce5c00;font-weight:bold">{&lt;/span>processing,slurm&lt;span style="color:#ce5c00;font-weight:bold">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>These directories will store your sandbox code, outputs, and logs.
+You&amp;rsquo;ll test your sandbox code with shared data located outside of this workspace.&lt;/p></description></item><item><title>Develop and test your first feature on the HPC cluster</title><link>https://nandstand.github.io/sample-site/samples/hpc-tutorial/</link><pubDate>Tue, 08 Jul 2025 15:59:14 -0500</pubDate><guid>https://nandstand.github.io/sample-site/samples/hpc-tutorial/</guid><description>&lt;p>The Coastal Air Quality Research Network (CAQRN) project is hosted on a Red Hat Enterprise Linux 8.10 high-performance computing (HPC) cluster.
+Batch processing jobs are submitted from the CAQRN development and production servers to the cluster&amp;rsquo;s compute nodes using orchestration scripts containing Slurm commands.&lt;/p>
+&lt;p>Developers submit test jobs from their sandbox environments on the development server to be run on the HPC cluster&amp;rsquo;s compute nodes.&lt;/p>
+&lt;h2 id="before-you-begin">Before you begin&lt;/h2>
+&lt;p>In this tutorial, you&amp;rsquo;ll add a simple logging feature to the CAQRN system, and install a new dependency to the project.
+You&amp;rsquo;ll test the feature by submitting a job to be run on the HPC cluster&amp;rsquo;s compute nodes from your sandbox environment.&lt;/p></description></item></channel></rss>
