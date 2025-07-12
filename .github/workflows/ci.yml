@@ -30,12 +30,12 @@ jobs:
       - name: generate ci site build
         run: >
           hugo  
-          --baseURL "http://localhost:8080/site/"
-          --destination site-root/site
+          --baseURL "http://localhost:8080/sample-site/"
+          --destination site-root/sample-site
       - name: upload site
         uses: actions/upload-artifact@v4
         with:
-          name: site
+          name: sample-site
           path: ./site-root
           retention-days: 1
 
@@ -57,7 +57,7 @@ jobs:
       - name: download site
         uses: actions/download-artifact@v4
         with:
-          name: site
+          name: sample-site
           path: ./site-root
       - name: serve site
         run: npx http-server site-root -p 8080 --silent &
