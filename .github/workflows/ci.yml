@@ -30,7 +30,7 @@ jobs:
       - name: generate ci site build
         run: >
           hugo  
-          --baseURL "http://localhost:8080/site/"
+          --baseURL "http://localhost:8080/sample-site/"
           --destination site-root/site
       - name: upload site
         uses: actions/upload-artifact@v4
