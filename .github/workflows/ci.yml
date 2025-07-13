@@ -58,6 +58,8 @@ jobs:
           path: ./public
       - name: serve site
         run: npx http-server public -p 8080 --silent &
+      - name: wait for server
+        run: sleep 2
       - name: link check (lychee)
         uses: lycheeverse/lychee-action@v2.4.1
         with:
