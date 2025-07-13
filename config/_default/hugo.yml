@@ -1,5 +1,5 @@
 baseURL: https://samples.christianf.io/
-title: "Sample Documentation"
+title: "Samples | Christian Fuller"
 languageCode: en-us
 
 enableGitInfo: true
@@ -32,7 +32,7 @@ menu:
     - name: GitHub
       url: https://github.com/nandstand/sample-site
       weight: 20
-    - name: Christian Fuller
+    - name: Personal Site
       url: https://christianf.io/
       weight: 30
 
