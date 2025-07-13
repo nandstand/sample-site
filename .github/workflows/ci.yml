@@ -25,18 +25,15 @@ jobs:
           cache-dependency-path: '**/package-lock.json'
       - name: install node dependencies
         run: npm ci        
-      - name: mirror dir structure of prod site 
-        run: mkdir -p site-root
       - name: generate ci site build
         run: >
           hugo  
-          --baseURL "http://localhost:8080/sample-site/"
-          --destination site-root/sample-site
+          --baseURL "http://localhost:8080/"
       - name: upload site
         uses: actions/upload-artifact@v4
         with:
-          name: sample-site
-          path: ./site-root
+          name: site
+          path: ./public
           retention-days: 1
 
   lint-md:
@@ -57,16 +54,16 @@ jobs:
       - name: download site
         uses: actions/download-artifact@v4
         with:
-          name: sample-site
-          path: ./site-root
+          name: site
+          path: ./public
       - name: serve site
-        run: npx http-server site-root -p 8080 --silent &
+        run: npx http-server public -p 8080 --silent &
       - name: link check (lychee)
         uses: lycheeverse/lychee-action@v2.4.1
         with:
           args: >
-            --base "http://localhost:8080/sample-site/"
+            --base "http://localhost:8080/"
             --no-progress
             --verbose
             --accept 200,206
-            './site-root/**/*.html'
+            './public/**/*.html'
