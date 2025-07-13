@@ -39,6 +39,8 @@ menu:
 params:
   gcs_engine_id: d72aa9b2712488cc3
   sidebar_search_disable: false
+  github_repo: https://github.com/nandstand/sample-site
+  github_branch: main
   copyright:
     authors: Christian Fuller
   ui:
