@@ -1,6 +1,4 @@
 ---
-date: '2025-07-08T15:59:14-05:00'
-draft: false
 title: 'Develop and test your first feature on the HPC cluster'
 linkTitle: 'Develop and test your first feature on the HPC cluster'
 description: 'Learn how to navigate the CAQRN project codebase and submit test jobs from your sandbox environment.'
