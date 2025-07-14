@@ -41,6 +41,7 @@ These woudl differ slightly on the prod and dev servers
 Prod server would have the prod branch checked out, dev would have dev...
 Separate dev and prod config tables under the config repo
 
+```
 /caqrn/
   code/
     caqrn-processing/
@@ -60,9 +61,11 @@ Separate dev and prod config tables under the config repo
     slurm/
     cron/
   venv/                 # service account would use Python venv
+```
 
 ### Developer sandbox 
 
+```
 /home/user/caqrn-sandbox/
   code/
     caqrn-processing
@@ -75,5 +78,4 @@ Separate dev and prod config tables under the config repo
     slurm/
     cron/
   venv/
-
-
+```
