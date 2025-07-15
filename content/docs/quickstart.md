@@ -21,7 +21,7 @@ Before you start, you'll need:
 
 ## Create your workspace
 
-Get logged in to the development server. Then, set up the project directory structure.
+Once you're logged in to the development server, set up the project directory structure:
 
 ```bash
 cd ~
@@ -35,7 +35,7 @@ You'll test your sandbox code with shared data located outside of this workspace
 
 ## Clone the project repositories
 
-Clone the project's code and configuration repositories.
+Clone the project's code and configuration repositories:
 
 ```bash
 cd ~/caqrn-sandbox/code
@@ -45,7 +45,7 @@ git clone git@gitlab.caqrn.internal:caqrn/caqrn-config.git
 
 ## Create a Python virtual environment
 
-Create an isolated Python environment for your sandbox dependencies.
+Create an isolated Python environment for your sandbox dependencies:
 
 ```bash
 cd ~/caqrn-sandbox
@@ -56,7 +56,7 @@ Use this exact location and name - it's referenced in the sandbox environment sc
 
 ## Source the sandbox environment
 
-Source the sandbox environment script in the project repository.
+Source the sandbox environment script in the project repository:
 
 ```bash
 source ~/caqrn-sandbox/code/caqrn-processing/scripts/sandbox_env.sh
@@ -66,14 +66,14 @@ This script activates your Python virtual environment, and sets all of the envir
 
 ## Install dependencies
 
-Confirm you're on the develop branch before installing dependencies.
+Confirm you're on the develop branch before installing dependencies:
 
 ```bash
 cd ~/caqrn-sandbox/code/caqrn-processing
 git branch  # Should show "develop" as current branch
 ```
 
-Install dependencies using the requirements.txt file.
+Install dependencies using the requirements.txt file:
 
 ```bash
 pip install -r requirements.txt
