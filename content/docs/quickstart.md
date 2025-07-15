@@ -15,13 +15,13 @@ You'll set up directories, clone repositories, and create an isolated Python env
 
 Before you start, you'll need:
 
-- Access to the CAQRN development server
+- Access to the CAQRN development server (`caqrn-dev`).
 - Python 3.9 installed
 - Git configured with access to `gitlab.caqrn.internal`
 
 ## Create your workspace
 
-Set up the project directory structure.
+Get logged in to the development server. Then, set up the project directory structure.
 
 ```bash
 cd ~
