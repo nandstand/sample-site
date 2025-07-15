@@ -16,11 +16,6 @@ export CAQRN_LOG_ROOT="$HOME/caqrn-sandbox/logs"
 export CAQRN_INCOMING_DATA="/caqrn/data/incoming"
 export CAQRN_TEMP_DIR="/caqrn/temp"
 
-# EPA has APIs for air quality data
-# keeping it simple: this project has a single data provider
-# developers use a shared API key in /secrets/ if they're doing work on download scripts
-export CAQRN_EPA_API_KEY="$(cat /caqrn/secrets/dev_epa_api_key)"
-
 # SLURM settings
 # Use same account and  partition as automated dev server processes
 # Add user name to a prefix used in submission scripts
