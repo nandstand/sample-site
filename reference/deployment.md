@@ -1,15 +1,14 @@
 Project Deployment
 ---
 
-## What this reference needs to cover
+## System / service account
 
-- Mainly deployment and environment related information
-- Sample docs will cover onboarding stuff for developers, ops related troubleshooting, environment set up, etc.
-
-## Service Accounts
-
-- Owns the cron
+- Owns the cron and live code, and submits the automated batch jobs
+- Non-login account `caqrn`
 - Senior developers able to sudo in if direct access necessary
+- Sources: 
+    - https://www.beyondtrust.com/blog/entry/how-to-manage-and-secure-service-accounts-best-practices
+    - https://en.wikipedia.org/wiki/Service_account
 
 ## Slurm / compute nodes
 
@@ -17,7 +16,6 @@ Project Deployment
 - The dev and prod servers are login nodes
 - The project would have access to 20-30 compute nodes
 - The compute nodes would mount to wherever the login nodes' python venvs live
-- No library management on compute nodes to keep things simple
 - Developers submit test jobs from the dev server (their sandboxes)
 - Sample docs won't cover local tests, just test jobs submitted to Slurm
 
