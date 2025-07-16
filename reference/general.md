@@ -20,15 +20,27 @@ General
 
 ## About the HPC cluster
 
-
+- CAQRN is hosted on a university owned cluster
+- University name: Coastal State University
+- Cluster name: Zephyr
+- Login node domain: `zephyr.login.coast-state.edu`
+- Small project that uses a university's general purpose shared cluster, which is a common set up for research groups
+  - Source: https://www.depts.ttu.edu/hpcc/
+  - Source: https://computing.sas.upenn.edu/research/high-performance
+  - Source: https://www.sherlock.stanford.edu/docs/#why-use-sherlock
 
 ## System overview
+
+### Languages and data types
 
 - Python for the primary processing components
 - Bash for orchestration scripts
 - Slurm for batch job scheduler (most common, lots of reference available)
 - Data formats would include CSV, JSON, or NetCDF
 - YAML for config tables because that's what I've been using lately
+
+### Architecture
+
 - Software project lives on a public university / research HPC
 - Development and production deployments on the HPC filesystem, automated using whatever makes sense (cron, or whatever scheduling is available on the HPC)
 - Shared service account user owns the deployed code
