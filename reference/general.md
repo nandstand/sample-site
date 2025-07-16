@@ -1,10 +1,7 @@
 General
 ---
 
-## What this reference needs to cover
 
-- Mainly deployment and environment related information
-- Sample docs will cover onboarding stuff for developers, ops related troubleshooting, environment set up, etc.
 
 ## Domain / what kind of products
 
@@ -13,7 +10,7 @@ General
 
 ## Customers
 
-- CAQRN provides products to government agencies, public health departments, and research groups.
+- CAQRN provides products to government agencies and research groups
 
 ## System overview
 
@@ -21,13 +18,13 @@ General
 - Bash for orchestration scripts
 - Slurm for batch job scheduler (most common, lots of reference available)
 - Data formats would include CSV, JSON, or NetCDF
-- YAML for config tables
+- YAML for config tables because that's what I've been using lately
 - Dev and prod servers (`caqrn-dev` and `caqrn-prod`), with automated processes running under a service account user (`caqrn`)
 - Devs would log in and do work on the dev server (login node)
 
 ## Source control
 
-- The project uses an internal GitLab server
+- The project uses an internal GitLab server, hosted by the university
 - Development branch: `develop`
 - Production branch: `main`
 - The project config tables are in their own repo

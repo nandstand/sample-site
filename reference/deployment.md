@@ -23,9 +23,21 @@ Project Deployment
 
 - Environment scripts set up paths, activate python environment, and add project to PYTHONPATH
 - Shared incoming data on the dev server to keep things simple
-- Every deployment uses an isolated Python venv, including developers' sandboxes
+- The deployed code uses a Python virtual environment (dev/prod)
+- Developers use a Python virtual environment in their sandboxes
 - Have to activate on login
 - Small team: just manage dependencies via requirements file / pip
+
+## Python virtual environments / libraries on HPC infrastructure
+
+- Python virtual environments allow developers to isolate and test new dependencies in a way that is easy to understand (and write about).
+  - Source: https://docs.python.org/3/library/venv.html
+- System dependencies on HPC clusters are often managed via things like the `module load` command to load modules already installed on the compute nodes 
+  - Source: https://www.sherlock.stanford.edu/docs/user-guide/running-jobs/#example-sbatch-script
+  - Other source: https://www.carc.usc.edu/user-guides/advanced-hpc-programming/programming-languages/python
+- Since this is just a sample project, and to keep things simple, we'll assume that it's allowed and feasible to activate a python virtual environment that lives on storage mounted to the login node, from the compute node.
+  - This document suggests using pip to install in an HPC env: https://www.hpc.iastate.edu/guides/virtual-environments/python-virtual-environments
+- We'll also omit the concept of managing modules on a public HPC to keep the scope of the samples more narrow.  Let's just assume we have the correct version of Python loaded on the login and compute nodes
 
 ## Cron
 
