@@ -16,10 +16,14 @@ Project Deployment
 - Developers log into the login nodes and work from their sandbox environments
 - Sample docs won't cover local tests, just test jobs submitted to Slurm
 
+## Slurm submission script / Slurm job script
+
+-
+
 ## Environment
 
 - Environment scripts set up paths, activate python environment, and add project to PYTHONPATH
-- Shared incoming data on the dev server to keep things simple
+- Shared incoming data, developers use the dev data set for testing
 - The deployed code uses a Python virtual environment (dev/main)
 - Developers use a Python virtual environment in their sandboxes
 - Have to activate on login
@@ -34,13 +38,16 @@ Project Deployment
   - Other source: https://www.carc.usc.edu/user-guides/advanced-hpc-programming/programming-languages/python
 - Since this is just a sample project, and to keep things simple, we'll assume that it's allowed and feasible to activate a python virtual environment that lives on storage mounted to the login node, from the compute node.
   - This document suggests using pip to install in an HPC env: https://www.hpc.iastate.edu/guides/virtual-environments/python-virtual-environments
-- We'll also omit the concept of managing modules on a public HPC to keep the scope of the samples more narrow.  Let's just assume we have the correct version of Python loaded on the login and compute nodes
+- We'll also omit the concept of managing modules on a public HPC to keep the scope of the samples more narrow.  Let's just assume we have the correct version of Python loaded on the login and compute nodes, and we don't need any compiled libraries
+- Project Python dependencies managed via `pip` and updates to the project's `requirements.txt` file
 
-## Cron
+## Scheduled jobs
 
-- Just one daily job and one set of data coming in for simplicity's sake
-- Not even going to cover delivery or API stuff in any of the docs...
-- Cron would source env and then run the orchestration script
+- Daily automated submission of `develop` branch and `main` branch code
+- Products would be archived and provided to whatever research groups the project serves
+- Just one daily processing job and one set of data coming in for simplicity's sake
+- Processing job is a long running job (a few hours)
+- If the project used cron, it would be owned by the service account and look something like this:
 
 ```bash
 0 2 * * * caqrn source /home/caqrn/.caqrn_env && /caqrn/code/caqrn-processing/scripts/download_data.sh

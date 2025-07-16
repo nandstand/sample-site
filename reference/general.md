@@ -48,7 +48,7 @@ General
 ### Service account / deployed code
 
 - These would differ slightly for the dev and prod deployments
-- Maybe a separate `/caqrn-dev/` and `/caqrn-prod` structure
+- Maybe a separate `/caqrn/` and `/caqrn-dev/` structure
 - Prod deployment would have the prod branch checked out, dev would have dev...
 - Separate dev and prod config tables under the config repo
 
@@ -90,3 +90,8 @@ General
     cron/
   venv/
 ```
+
+## Output files
+
+-
+  - Source:

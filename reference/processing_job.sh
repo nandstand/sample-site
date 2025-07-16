@@ -28,7 +28,6 @@ mkdir -p "$OUTPUT_DIR"
 cd "$WORKING_DIR"
 
 # Processing would look something like this
-# but probably with more args IRL
 python -m caqrn_processor.main \
     --input-dir "$INPUT_DIR" \
     --output-dir "$OUTPUT_DIR" \

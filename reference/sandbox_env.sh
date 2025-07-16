@@ -1,5 +1,6 @@
 #!/bin/bash
 # CAQRN Sandbox environment script
+# Deployed code environment would look similar to this
 
 # Activate the python virtual environmnemt
 source "$HOME/caqrn-sandbox/venv/bin/activate"
@@ -12,14 +13,15 @@ export CAQRN_DATA_ROOT="$HOME/caqrn-sandbox/data"
 export CAQRN_LOG_ROOT="$HOME/caqrn-sandbox/logs"
 
 # Shared / non-sandbox data paths
-# Developers use data pulled in by the dev server's cron scheduled downloads
-export CAQRN_INCOMING_DATA="/caqrn/data/incoming"
-export CAQRN_TEMP_DIR="/caqrn/temp"
+# Developers use data pulled in by the dev server's scheduled downloads
+export CAQRN_INCOMING_DATA="/caqrn-dev/data/incoming"
+export CAQRN_TEMP_DIR="/caqrn-dev/temp"
 
 # SLURM settings
-# Use same account and  partition as automated dev server processes
+# Use same account as scheduled dev runs
+# Use the development partition
 # Add user name to a prefix used in submission scripts
-export CAQRN_SLURM_PARTITION="compute-dev"
+export CAQRN_SLURM_PARTITION="dev"
 export CAQRN_SLURM_ACCOUNT="caqrn-dev"
 export CAQRN_JOB_PREFIX="${USER}_test_"
 
