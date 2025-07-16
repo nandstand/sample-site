@@ -3,7 +3,7 @@ Project Deployment
 
 ## System / service account
 
-- Owns the cron and live code, and submits the automated batch jobs
+- Owns the cron and deployed code, and submits the automated batch jobs
 - Non-login account `caqrn`
 - Senior developers able to sudo in if direct access necessary
 - Sources: 
@@ -12,18 +12,15 @@ Project Deployment
 
 ## Slurm / compute nodes
 
-- Compute partitions: dev (`compute-dev`), prod (`compute-prod`)
-- The dev and prod servers are login nodes
-- The project would have access to 20-30 compute nodes
 - The compute nodes would mount to wherever the login nodes' python venvs live
-- Developers submit test jobs from the dev server (their sandboxes)
+- Developers log into the login nodes and work from their sandbox environments
 - Sample docs won't cover local tests, just test jobs submitted to Slurm
 
 ## Environment
 
 - Environment scripts set up paths, activate python environment, and add project to PYTHONPATH
 - Shared incoming data on the dev server to keep things simple
-- The deployed code uses a Python virtual environment (dev/prod)
+- The deployed code uses a Python virtual environment (dev/main)
 - Developers use a Python virtual environment in their sandboxes
 - Have to activate on login
 - Small team: just manage dependencies via requirements file / pip
@@ -50,5 +47,3 @@ Project Deployment
 0 3 * * * caqrn source /home/caqrn/.caqrn_env && /caqrn/code/caqrn-processing/scripts/submit_daily_job.sh
 0 1 * * 0 caqrn source /home/caqrn/.caqrn_env && /caqrn/code/caqrn-processing/scripts/cleanup.sh
 ```
-
-

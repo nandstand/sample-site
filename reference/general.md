@@ -1,7 +1,13 @@
 General
 ---
 
+## What these samples will cover
 
+- Deployment / ops related architecture
+
+## What they won't
+
+- Software architecture / design for the application itself
 
 ## Domain / what kind of products
 
@@ -12,6 +18,10 @@ General
 
 - CAQRN provides products to government agencies and research groups
 
+## About the HPC cluster
+
+
+
 ## System overview
 
 - Python for the primary processing components
@@ -19,12 +29,15 @@ General
 - Slurm for batch job scheduler (most common, lots of reference available)
 - Data formats would include CSV, JSON, or NetCDF
 - YAML for config tables because that's what I've been using lately
-- Dev and prod servers (`caqrn-dev` and `caqrn-prod`), with automated processes running under a service account user (`caqrn`)
-- Devs would log in and do work on the dev server (login node)
+- Software project lives on a public university / research HPC
+- Development and production deployments on the HPC filesystem, automated using whatever makes sense (cron, or whatever scheduling is available on the HPC)
+- Shared service account user owns the deployed code
+- Devs would log in and do work on login nodes from their home directories, with these docs covering getting that environment configured
 
 ## Source control
 
 - The project uses an internal GitLab server, hosted by the university
+- Server accessed at: 
 - Development branch: `develop`
 - Production branch: `main`
 - The project config tables are in their own repo
@@ -34,8 +47,9 @@ General
 
 ### Service account / deployed code
 
-- These woudl differ slightly on the prod and dev servers
-- Prod server would have the prod branch checked out, dev would have dev...
+- These would differ slightly for the dev and prod deployments
+- Maybe a separate `/caqrn-dev/` and `/caqrn-prod` structure
+- Prod deployment would have the prod branch checked out, dev would have dev...
 - Separate dev and prod config tables under the config repo
 
 ```

@@ -1,6 +1,7 @@
 #!/bin/bash
 # submit_daily_job.sh - job submission script
-# This is the job that would be called from the service account's cron
+# This is the wrapper script that would be called eitehr from cron
+# or from whatever scheduler is available on the login node (scrontab is a thing)
 
 DATE=${1:-$(date +%Y%m%d)}
 JOB_NAME="${CAQRN_JOB_PREFIX}daily_${DATE}"
@@ -9,9 +10,9 @@ JOB_NAME="${CAQRN_JOB_PREFIX}daily_${DATE}"
 WORKING_DIR="${CAQRN_DATA_ROOT}/processing/${JOB_NAME}"
 mkdir -p "$WORKING_DIR"
 
-# submit the job to SLURM queue
+# submit the job to Slurm job queue
 # export all of the user's environment variables to the compute node job
-# give the SLURM job wrapper the date and working dir
+# give the Slurm job wrapper the date and working dir
 sbatch \
     --job-name="$JOB_NAME" \
     --partition="$CAQRN_SLURM_PARTITION" \
