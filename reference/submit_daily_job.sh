@@ -1,7 +1,7 @@
 #!/bin/bash
 # submit_daily_job.sh - job submission script
-# This is the wrapper script that would be called eitehr from cron
-# or from whatever scheduler is available on the login node (scrontab is a thing)
+# This is the wrapper script that would be on the project's scrontab
+# Also used by developers to manually submit test jobs to the compute nodes
 
 DATE=${1:-$(date +%Y%m%d)}
 JOB_NAME="${CAQRN_JOB_PREFIX}daily_${DATE}"
@@ -12,7 +12,7 @@ mkdir -p "$WORKING_DIR"
 
 # submit the job to Slurm job queue
 # export all of the user's environment variables to the compute node job
-# give the Slurm job wrapper the date and working dir
+# give the Slurm job script the date and working dir
 sbatch \
     --job-name="$JOB_NAME" \
     --partition="$CAQRN_SLURM_PARTITION" \
