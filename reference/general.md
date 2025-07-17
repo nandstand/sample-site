@@ -1,18 +1,24 @@
 General
 ---
 
-## What these samples will cover
+## Objective
+
+### What these samples will cover
 
 - Deployment / ops related architecture
 
-## What they won't
+### What they won't
 
 - Software architecture / design for the application itself
 
-## Domain / what kind of products
+## About the research network
 
-- Air quality monitoring
-- The Coastal Air Quality Research Network (CAQRN) uses remote sensor data to produce air quality index products for public environmental health research.
+- The Coastal Air Quality Research Network (CAQRN) project uses remote sensor data to produce air quality index products for public environmental health research
+- Air quality index is EPA's way of communicating outdoor air quality
+  - Source: https://www.airnow.gov/aqi/aqi-basics/
+- Data products:
+  - `daily_aqi_summary_YYYYMMDD.csv`
+  - `hourly_aqi_YYYYMMDD.csv`
 
 ## About the HPC cluster
 
@@ -109,8 +115,3 @@ General
     cron/
   venv/
 ```
-
-## Output files
-
--
-  - Source:
