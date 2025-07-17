@@ -12,6 +12,7 @@ Sources
 ## Open source scientific computing projects
 
 - [CMAQ, an EPA air quality project](https://www.epa.gov/cmaq)
+- [CESM, an Earth system model funded by the US NSF](https://www.cesm.ucar.edu/)
 
 ## General software / IT concepts
 
