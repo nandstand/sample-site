@@ -14,6 +14,13 @@ Sources
 - [CMAQ, an EPA air quality project](https://www.epa.gov/cmaq)
 - [CESM, an Earth system model funded by the US NSF](https://www.cesm.ucar.edu/)
 
+## Environment and orchestration script examples
+
+- [Princeton's Python for HPC knowledge base](https://researchcomputing.princeton.edu/support/knowledge-base/python)
+- [University of Michigan, GitHub repo with Slurm job script examples](https://github.com/statgen/SLURM-examples)
+- [BIH HPC Docs' Slurm job script tutorial](https://hpc-docs.cubi.bihealth.org/slurm/job-scripts/)
+- [Environment file example](https://github.com/isce-framework/isce2/blob/main/docker/isce_env.sh)
+
 ## General software / IT concepts
 
 - [Python virtual environments](https://docs.python.org/3/library/venv.html)
