@@ -13,11 +13,11 @@ export CAQRN_DATA_ROOT="$HOME/caqrn-sandbox/data"
 export CAQRN_LOG_ROOT="$HOME/caqrn-sandbox/logs"
 
 # Shared / non-sandbox data paths
-# Developers use data pulled in by the dev server's scheduled downloads
-export CAQRN_INCOMING_DATA="/caqrn-dev/data/incoming"
-export CAQRN_TEMP_DIR="/caqrn-dev/temp"
+# Developers use data pulled in by the dev branch deployment's scheduled downloads
+export CAQRN_INCOMING_DATA="/projects/caqrn/shared/data/incoming"
+export CAQRN_TEMP_DIR="/projects/caqrn/develop/data/processing"
 
-# SLURM settings
+# Slurm settings
 # Use same account as scheduled dev runs
 # Use the development partition
 # Add user name to a prefix used in submission scripts
