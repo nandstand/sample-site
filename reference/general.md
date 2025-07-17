@@ -55,36 +55,46 @@ General
 
 ## Directory structure
 
-### Service account / deployed code
+### Project deployed code
 
 - These would differ slightly for the dev and prod deployments
-- Maybe a separate `/caqrn/` and `/caqrn-dev/` structure
-- Prod deployment would have the prod branch checked out, dev would have dev...
+- Separate structures, with the repos probably being owned by a lead or project manager with write permissions
+  - Source: https://hpcc.umd.edu/hpcc/help/storage.html
+  - Source: https://hpc.nih.gov/docs/groups.html
+- Prod deployment would have the main branch checked out, dev would have develop...
 - Separate dev and prod config tables under the config repo
 
 ```
-/caqrn/
-  code/
-    caqrn-processing/
-      main.py
-      ...
-      scripts/
-      requirements.txt
-    caqrn-config/
-      dev/
-      prod/
-  data/
-    incoming/
-    processing/
-    products/
-  logs/
-    processing/
-    slurm/
-    cron/
-  venv/                 # service account would use Python venv
+/projects/caqrn/
+  production/
+    ...
+  develop/
+    code/
+      caqrn-processing/
+        main.py
+        ...
+        scripts/
+        requirements.txt
+      caqrn-config/
+        dev/
+        prod/
+    data/
+      incoming/
+      processing/
+      products/
+    logs/
+      processing/
+      slurm/
+      cron/
+    venv/
+  shared/
+    data/
+      incoming/     # link to develop incoming data
 ```
 
 ### Developer sandbox 
+
+- Developers would work from their home sandbox directories
 
 ```
 /home/user/caqrn-sandbox/

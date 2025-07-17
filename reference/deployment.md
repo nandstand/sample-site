@@ -1,15 +1,6 @@
 Project Deployment
 ---
 
-## System / service account
-
-- Owns the cron and deployed code, and submits the automated batch jobs
-- Non-login account `caqrn`
-- Senior developers able to sudo in if direct access necessary
-- Sources: 
-    - https://www.beyondtrust.com/blog/entry/how-to-manage-and-secure-service-accounts-best-practices
-    - https://en.wikipedia.org/wiki/Service_account
-
 ## Slurm / partitions / compute nodes
 
 - The project uses a public university HPC cluster where compute nodes are shared with other users
@@ -23,18 +14,22 @@ Project Deployment
 - Developers log into the login nodes and work from their sandbox environments
 - Sample docs won't cover local tests, just test jobs submitted to Slurm
 
-## Slurm submission script / Slurm job script
-
--
-
 ## Environment
 
 - Environment scripts set up paths, activate python environment, and add project to PYTHONPATH
+- Separate environment scripts for production, development, and for developers in their sandboxes
 - Shared incoming data, developers use the dev data set for testing
 - The deployed code uses a Python virtual environment (dev/main)
 - Developers use a Python virtual environment in their sandboxes
 - Have to activate on login
 - Small team: just manage dependencies via requirements file / pip
+
+## Storage / filesystem
+
+- The CAQRN group project directory (the live code) would live under something like `/projects/caqrn/`.
+- Providers offer storage areas specifically for this kind of thing
+  - Source: https://hpcc.umd.edu/hpcc/help/storage.html
+  - Source: https://documentation.sigma2.no/files_storage/clusters.html#project-area
 
 ## Python virtual environments / libraries on HPC infrastructure
 
@@ -54,10 +49,6 @@ Project Deployment
 - Products would be archived and provided to whatever research groups the project serves
 - Just one daily processing job and one set of data coming in for simplicity's sake
 - Processing job is a long running job (a few hours)
-- If the project used cron, it would be owned by the service account and look something like this:
-
-```bash
-0 2 * * * caqrn source /home/caqrn/.caqrn_env && /caqrn/code/caqrn-processing/scripts/download_data.sh
-0 3 * * * caqrn source /home/caqrn/.caqrn_env && /caqrn/code/caqrn-processing/scripts/submit_daily_job.sh
-0 1 * * 0 caqrn source /home/caqrn/.caqrn_env && /caqrn/code/caqrn-processing/scripts/cleanup.sh
-```
+- Downloaded data from the `develop` deployment would be accessible for developers to use in their sandbox job submissions
+- Automated job submission would be done via `scrontab`, and that would likely be owned and managed by the same person that owns the deployment repos
+  - Source: https://hpc.nmsu.edu/discovery/slurm/recurring-jobs/

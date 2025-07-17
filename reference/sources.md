@@ -16,4 +16,5 @@ Sources
 ## General software / IT concepts
 
 - [Python virtual environments](https://docs.python.org/3/library/venv.html)
-- [Service accounts](https://www.beyondtrust.com/blog/entry/how-to-manage-and-secure-service-accounts-best-practices)
+- [Slurm workload manager](https://slurm.schedmd.com/quickstart.html)
+- [Scrontab](https://slurm.schedmd.com/scrontab.html)
