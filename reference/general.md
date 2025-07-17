@@ -39,7 +39,6 @@ General
 
 - Software project lives on a public university / research HPC
 - Development and production deployments on the HPC filesystem, automated using whatever makes sense (cron, or whatever scheduling is available on the HPC)
-- Shared service account user owns the deployed code
 - Devs would log in and do work on login nodes from their home directories, with these docs covering getting that environment configured
 
 ## Source control
