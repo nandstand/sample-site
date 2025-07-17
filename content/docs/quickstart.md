@@ -1,27 +1,27 @@
 ---
 title: 'Quickstart'
 linkTitle: 'Quickstart'
-description: 'Set up your sandbox on the Coastal Air Quality Research Network (CAQRN) development server in under 10 minutes.'
+description: 'Set up your sandbox for development on the HPC cluster in under 10 minutes.'
 type: 'docs'
 weight: 5
 ---
 
 ## What you'll set up
 
-A personal sandbox environment for developing, testing, and running HPC jobs.
+A personal sandbox environment for developing, testing, and running HPC jobs on the university's Zephyr cluster.
 You'll set up directories, clone repositories, and create an isolated Python environment.
 
 ## Prerequisites
 
 Before you start, you'll need:
 
-- Access to the CAQRN development server (`caqrn-dev`).
+- Access to a login node on the Zephyr cluster (`zephyr.login.coast-state.edu`)
 - Python 3.9 installed
-- Git configured with access to `gitlab.caqrn.internal`
+- Git configured with access to `gitlab.coast-state.edu`
 
 ## Create your workspace
 
-Once you're logged in to the development server, set up the project directory structure:
+Set up the project directory structure in your home directory on the login node:
 
 ```bash
 cd ~
@@ -39,8 +39,8 @@ Clone the project's code and configuration repositories:
 
 ```bash
 cd ~/caqrn-sandbox/code
-git clone git@gitlab.caqrn.internal:caqrn/caqrn-processing.git
-git clone git@gitlab.caqrn.internal:caqrn/caqrn-config.git
+git clone git@gitlab.coast-state.edu:caqrn/caqrn-processing.git
+git clone git@gitlab.coast-state.edu:caqrn/caqrn-config.git
 ```
 
 ## Create a Python virtual environment
@@ -81,6 +81,6 @@ pip install -r requirements.txt
 
 ## You're all set
 
-You now have an isolated sandbox where you can make code changes, install and update dependencies, and test using live data shared on the development server.
+You now have an isolated sandbox where you can make code changes, install and update dependencies, and test using sensor data shared on the cluster's filesystem.
 
 ## Next steps
