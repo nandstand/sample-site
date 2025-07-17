@@ -19,7 +19,7 @@ Project Deployment
 - Environment scripts set up paths, activate python environment, and add project to PYTHONPATH
 - Separate environment scripts for production, development, and for developers in their sandboxes
 - Production and development deployments would use the non-development Slurm queue (`standard`) and account (`caqrn`)
-- Developers would use the development queue (`dev`) and account (`caqrn`)
+- Developers would use the development queue (`dev`) and account (`caqrn-dev`)
 - Job script would determine what to run on the compute node using the environment variable `CAQRN_ENV`:
   - `production` - main branch deployment
   - `staging` - develop branch deployment
