@@ -14,10 +14,6 @@ General
 - Air quality monitoring
 - The Coastal Air Quality Research Network (CAQRN) uses remote sensor data to produce air quality index products for public environmental health research.
 
-## Customers
-
-- CAQRN provides products to government agencies and research groups
-
 ## About the HPC cluster
 
 - CAQRN is hosted on a university owned cluster
@@ -49,7 +45,9 @@ General
 ## Source control
 
 - The project uses an internal GitLab server, hosted by the university
-- Server accessed at: 
+  - Source: https://helpdesk.cs.umd.edu/faq/connecting/gitlab.html
+- Server accessed at: `gitlab.coast-state.edu`
+- Clone: `git clone git@gitlab.coast-state.edu:caqrn/caqrn-processing.git`
 - Development branch: `develop`
 - Production branch: `main`
 - The project config tables are in their own repo
