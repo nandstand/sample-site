@@ -12,10 +12,16 @@ PROCESSING_DATE=$1
 WORKING_DIR=$2
 
 # Pythonn environment needs to be reactivated on the compute node
-# Check if it's the service account, which also uses a Python venv
-if [[ "$USER" == "caqrn" ]]; then
-    source /caqrn/venv/bin/activate
+# Check environment and activate the venv
+
+if [[ "$CAQRN_ENV" == "production" ]]; then
+    # Main branch deployment
+    source /projects/caqrn/production/venv/bin/activate
+elif [[ "$CAQRN_ENV" == "staging" ]]; then
+    # Develop branch deployment
+    source /projects/caqrn/develop/venv/bin/activate
 else
+    # Active development job | CAQRN_ENV == development
     source "$HOME/caqrn-sandbox/venv/bin/activate"
 fi
 

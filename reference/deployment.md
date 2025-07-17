@@ -18,6 +18,12 @@ Project Deployment
 
 - Environment scripts set up paths, activate python environment, and add project to PYTHONPATH
 - Separate environment scripts for production, development, and for developers in their sandboxes
+- Production and development deployments would use the non-development Slurm queue (`standard`) and account (`caqrn`)
+- Developers would use the development queue (`dev`) and account (`caqrn`)
+- Job script would determine what to run on the compute node using the environment variable `CAQRN_ENV`:
+  - `production` - main branch deployment
+  - `staging` - develop branch deployment
+  - `development` - active development / developer submitted jobs
 - Shared incoming data, developers use the dev data set for testing
 - The deployed code uses a Python virtual environment (dev/main)
 - Developers use a Python virtual environment in their sandboxes
@@ -46,7 +52,6 @@ Project Deployment
 ## Scheduled jobs
 
 - Daily automated submission of `develop` branch and `main` branch code
-- Products would be archived and provided to whatever research groups the project serves
 - Just one daily processing job and one set of data coming in for simplicity's sake
 - Processing job is a long running job (a few hours)
 - Downloaded data from the `develop` deployment would be accessible for developers to use in their sandbox job submissions
