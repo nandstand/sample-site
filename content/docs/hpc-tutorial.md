@@ -6,10 +6,7 @@ type: 'docs'
 weight: 10
 ---
 
-The Coastal Air Quality Research Network (CAQRN) project is hosted on a Red Hat Enterprise Linux 8.10 high-performance computing (HPC) cluster.
-Batch processing jobs are submitted from the CAQRN development and production servers to the cluster's compute nodes using orchestration scripts containing Slurm commands.
-
-Developers submit test jobs from their sandbox environments on the development server to be run on the HPC cluster's compute nodes.
+The Coastal Air Quality Research Network (CAQRN) project is...
 
 ## Before you begin
 
@@ -18,7 +15,7 @@ You'll test the feature by submitting a job to be run on the HPC cluster's compu
 
 ### What you'll need
 
-- A personal sandbox on the development server (refer to the Quickstart)
+- A sandbox environment on the Zephyr cluster (refer to the [Quickstart](../quickstart/))
 - Familiarity with Git
 - Familiarity with Python virtual environments
 
@@ -26,21 +23,26 @@ You'll test the feature by submitting a job to be run on the HPC cluster's compu
 
 - How your sandbox environment works
 - How dependencies for the project are managed
-- How jobs are submitted from your sandbox to the HPC cluster
+- How jobs are submitted from your sandbox to the cluster's compute nodes
 
 ## 1. Set up your environment
 
 To add the logging feature, you need to modify an existing file in the codebase.
 
-1. Log in to the CAQRN development server (`caqrn-dev`).
+1. Access a login node on the cluster, replacing the username below with your own:
+
+```bash
+ssh molina@zephyr.login.coast-state.edu
+```
+
+Login nodes are shared computing resources where users prepare and submit jobs to the cluster's compute nodes.
+Avoid running anything resource intensive directly on login nodes, as they can slow down the system for other users.
 
 2. Navigate to the code repo in your sandbox:
 
 ```bash
 cd ~/caqrn-sandbox/code/caqrn-processing
 ```
-
-The `onboarding` branch contains code specific to this tutorial.
 
 3. Check out the `onboarding` branch from the remote repository:
 
@@ -54,7 +56,7 @@ git checkout -b onboarding origin/onboarding
 git checkout -b feature/add-environment-logging
 ```
 
-It's a good idea to isolate work to feature branches using descriptive names like `feature/update-aqi-algorithm` or `bugfix/fix-filename-regex`.
+It's a good idea to isolate changes to the project's codebase to feature branches using names that describe the changes, like `feature/update-aqi-algorithm` or `bugfix/fix-filename-regex`.
 In normal development, you'll create feature branches from the `develop` branch and submit merge requests through the GitLab web interface.
 
 5. Source the sandbox environment script:
@@ -84,7 +86,7 @@ Data root: /home/molina/caqrn-sandbox/data
 
 ## 2. Manage project dependencies using pip
 
-The logging feature you're adding will print environment information about the test job you'll be submitting.
+The logging feature you're adding will print environment information about your test job.
 In this section, you'll install the `tabulate` library to create formatted tables in the job's Slurm logs.
 
 1. Install the `tabulate` package to your Python virtual environment using pip:
@@ -199,8 +201,12 @@ Notice that settings such as the compute partition and number of compute nodes f
 
 ```
 JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
-12345 compute-d molina_t   molina  R       2:34      4 node[01-04]
+12345       dev molina_t   molina  R       2:34      4 node[01-04]
 ```
+
+In general, test jobs should be submitted to the cluster's development partition (`dev`), which provides lower-cost, scaled-back compute resources appropriate for testing.
+
+For performance testing or jobs that need full compute resources, submit to the `standard` partition used by production jobs.
 
 3. Navigate to your Slurm log directory:
 
@@ -236,7 +242,7 @@ Your logging function will be called toward the end of execution.
 | Virtual environment | /home/molina/caqrn-sandbox/venv          |
 | Code root path      | /home/molina/caqrn-sandbox/code          |
 | Data root path      | /home/molina/caqrn-sandbox/data          |
-| Input data path     | /caqrn/data/incoming                     |
+| Input data path     | /projects/caqrn/shared/data/incoming     |
 +---------------------+------------------------------------------+
 ```
 
@@ -255,11 +261,11 @@ cd 2025/01/01
 ls -l
 ```
 
-You should see the two daily files, which were created using the development server's shared sensor data at `/caqrn/data/incoming`:
+You should see the two daily files, which were created using the project's shared sensor data at `/projects/caqrn/shared/data/incoming`:
 
 ```
-caqrn_regional_aqi_20250101.nc
-caqrn_pollutant_concentrations_20250101.nc
+daily_aqi_summary_20250101.csv
+hourly_aqi_20250101.csv`
 ```
 
 ## Conclusion
