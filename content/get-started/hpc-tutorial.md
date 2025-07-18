@@ -281,4 +281,4 @@ In normal development, you'll create feature branches from the `develop` branch,
 
 ### Learn more
 
-- Read about how [environment variables](/reference/environment-variables) are used in your sandbox and in the production environment.
+- See [Environment variables](/reference/environment-variables) for more information about your sandbox and the production environment.

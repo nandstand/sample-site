@@ -84,3 +84,5 @@ pip install -r requirements.txt
 You now have an isolated sandbox where you can make code changes, install and update dependencies, and test using sensor data shared on the cluster's filesystem.
 
 ## Next steps
+
+- [Develop and test your first feature on the HPC cluster](/get-started/hpc-tutorial/)
