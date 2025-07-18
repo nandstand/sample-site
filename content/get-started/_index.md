@@ -1,6 +1,6 @@
 ---
-title: 'Docs'
-linkTitle: 'Docs'
+title: 'Get started'
+linkTitle: 'Get started'
 description: 'Description goes here'
 type: 'docs'
 weight: 20

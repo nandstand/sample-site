@@ -1,7 +1,7 @@
 ---
 title: 'Develop and test your first feature on the HPC cluster'
 linkTitle: 'Develop and test your first feature on the HPC cluster'
-description: 'Learn how to navigate the CAQRN project codebase and submit test jobs from your sandbox environment.'
+description: 'Learn how to navigate the project codebase and submit test jobs from your sandbox environment.'
 type: 'docs'
 weight: 10
 ---
@@ -15,7 +15,7 @@ You'll test the feature by submitting a job to be run on the HPC cluster's compu
 
 ### What you'll need
 
-- A sandbox environment on the Zephyr cluster (refer to the [Quickstart](/docs/quickstart/))
+- A sandbox environment on the Zephyr cluster (refer to the [Quickstart](/get-started/quickstart/))
 - Familiarity with Git
 - Familiarity with Python virtual environments
 
@@ -281,4 +281,4 @@ In normal development, you'll create feature branches from the `develop` branch,
 
 ### Learn more
 
-- For more information on project environment variables, see the sandbox environment variable reference.
+- Read about how [environment variables](/reference/environment-variables) are used in your sandbox and in the production environment.
