@@ -15,7 +15,7 @@ You'll test the feature by submitting a job to be run on the HPC cluster's compu
 
 ### What you'll need
 
-- A sandbox environment on the Zephyr cluster (refer to the [Quickstart](../../quickstart/))
+- A sandbox environment on the Zephyr cluster (refer to the [Quickstart](/docs/quickstart/))
 - Familiarity with Git
 - Familiarity with Python virtual environments
 
