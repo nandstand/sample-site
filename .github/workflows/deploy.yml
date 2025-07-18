@@ -49,19 +49,21 @@ jobs:
     needs: [build, deploy]
     runs-on: ubuntu-latest
     steps:
-      - name: wait for Pages deployment to be live
-        run: | 
-          echo "Wait 30 seconds for GitHub Pages to update..."
-          sleep 30
+      - name: download site build
+        uses: actions/download-artifact@v4
+        with: 
+          name: site 
+          path: ./public
       - name: link check (lychee) | link check live site
         uses: lycheeverse/lychee-action@v2.4.1
         with:
           args: >
+            --base https://samples.christianf.io/ 
             --timeout 20
             --no-progress
             --verbose
             --accept 200,206
-            https://samples.christianf.io
+            './public/**/*.html'
  
   deploy:
     needs: build
