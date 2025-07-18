@@ -54,6 +54,8 @@ jobs:
         with: 
           name: site 
           path: ./public
+      - name: wait for Pages deployment
+        run: sleep 30
       - name: link check (lychee) | link check live site
         uses: lycheeverse/lychee-action@v2.4.1
         with:
