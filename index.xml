@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Welcome on Samples / Christian Fuller</title><link>https://samples.christianf.io/</link><description>Recent content in Welcome on Samples / Christian Fuller</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://samples.christianf.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Quickstart</title><link>https://samples.christianf.io/get-started/quickstart/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://samples.christianf.io/get-started/quickstart/</guid><description>&lt;h2 id="what-youll-set-up">What you&amp;rsquo;ll set up&lt;/h2>
+&lt;p>A personal sandbox environment for developing, testing, and running HPC jobs on the university&amp;rsquo;s Zephyr cluster.
+You&amp;rsquo;ll set up directories, clone repositories, and create an isolated Python environment.&lt;/p>
+&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
+&lt;p>Before you start, you&amp;rsquo;ll need:&lt;/p>
+&lt;ul>
+&lt;li>Access to a login node on the Zephyr cluster (&lt;code>zephyr.login.coast-state.edu&lt;/code>)&lt;/li>
+&lt;li>Python 3.9 installed&lt;/li>
+&lt;li>Git configured with access to &lt;code>gitlab.coast-state.edu&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;h2 id="create-your-workspace">Create your workspace&lt;/h2>
+&lt;p>Set up the project directory structure in your home directory on the login node:&lt;/p></description></item><item><title>Develop and test your first feature on the HPC cluster</title><link>https://samples.christianf.io/get-started/hpc-tutorial/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://samples.christianf.io/get-started/hpc-tutorial/</guid><description>&lt;p>The Coastal Air Quality Research Network (CAQRN) project is&amp;hellip;&lt;/p>
+&lt;h2 id="before-you-begin">Before you begin&lt;/h2>
+&lt;p>In this tutorial, you&amp;rsquo;ll add a simple logging feature to the CAQRN system, and install a new dependency to the project.
+You&amp;rsquo;ll test the feature by submitting a job to be run on the HPC cluster&amp;rsquo;s compute nodes from your sandbox environment.&lt;/p>
+&lt;h3 id="what-youll-need">What you&amp;rsquo;ll need&lt;/h3>
+&lt;ul>
+&lt;li>A sandbox environment on the Zephyr cluster (refer to the &lt;a href="https://samples.christianf.io/get-started/quickstart/">Quickstart&lt;/a>)&lt;/li>
+&lt;li>Familiarity with Git&lt;/li>
+&lt;li>Familiarity with Python virtual environments&lt;/li>
+&lt;/ul>
+&lt;h3 id="what-youll-learn">What you&amp;rsquo;ll learn&lt;/h3>
+&lt;ul>
+&lt;li>How your sandbox environment works&lt;/li>
+&lt;li>How dependencies for the project are managed&lt;/li>
+&lt;li>How jobs are submitted from your sandbox to the cluster&amp;rsquo;s compute nodes&lt;/li>
+&lt;/ul>
+&lt;h2 id="1-set-up-your-environment">1. Set up your environment&lt;/h2>
+&lt;p>To add the logging feature, you need to modify an existing file in the codebase.&lt;/p></description></item><item><title>Environment variables</title><link>https://samples.christianf.io/reference/environment-variables/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://samples.christianf.io/reference/environment-variables/</guid><description>&lt;p>Some information about how the project uses the environment variables during job submission and execution.&lt;/p>
+&lt;h2 id="quick-reference">Quick reference&lt;/h2>
+
+
+
+
+
+
+
+
+&lt;ul class="nav nav-tabs" id="tabs-0" role="tablist">
+ &lt;li class="nav-item">
+ &lt;button class="nav-link active"
+ id="tabs-00-00-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-00" role="tab"
+ data-td-tp-persist="sandbox" aria-controls="tabs-00-00" aria-selected="true">
+ Sandbox
+ &lt;/button>
+ &lt;/li>&lt;li class="nav-item">
+ &lt;button class="nav-link"
+ id="tabs-00-01-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-01" role="tab"
+ data-td-tp-persist="staging" aria-controls="tabs-00-01" aria-selected="false">
+ Staging
+ &lt;/button>
+ &lt;/li>&lt;li class="nav-item">
+ &lt;button class="nav-link"
+ id="tabs-00-02-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-02" role="tab"
+ data-td-tp-persist="production" aria-controls="tabs-00-02" aria-selected="false">
+ Production
+ &lt;/button>
+ &lt;/li>
+&lt;/ul>
+
+&lt;div class="tab-content" id="tabs-0-content">
+ &lt;div class="tab-body tab-pane fade show active"
+ id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab" tabindex="0">
+ &lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Variable&lt;/th>
+ &lt;th>Value&lt;/th>
+ &lt;th>Purpose&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;code>CAQRN_ENV&lt;/code>&lt;/td>
+ &lt;td>&lt;code>development&lt;/code>&lt;/td>
+ &lt;td>Environment identification&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>CAQRN_CODE_ROOT&lt;/code>&lt;/td>
+ &lt;td>&lt;code>$HOME/caqrn-sandbox/code&lt;/code>&lt;/td>
+ &lt;td>Root directory for source code&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>CAQRN_CONFIG_PATH&lt;/code>&lt;/td>
+ &lt;td>&lt;code>$HOME/caqrn-sandbox/code/caqrn-config/dev&lt;/code>&lt;/td>
+ &lt;td>Configuration files directory&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>CAQRN_DATA_ROOT&lt;/code>&lt;/td>
+ &lt;td>&lt;code>$HOME/caqrn-sandbox/data&lt;/code>&lt;/td>
+ &lt;td>Root directory for data storage&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>CAQRN_LOG_ROOT&lt;/code>&lt;/td>
+ &lt;td>&lt;code>$HOME/caqrn-sandbox/logs&lt;/code>&lt;/td>
+ &lt;td>Root directory for log files&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>CAQRN_INCOMING_DATA&lt;/code>&lt;/td>
+ &lt;td>&lt;code>/projects/caqrn/shared/data/incoming&lt;/code>&lt;/td>
+ &lt;td>Raw sensor data input&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>CAQRN_TEMP_DIR&lt;/code>&lt;/td>
+ &lt;td>&lt;code>$HOME/caqrn-sandbox/data/processing&lt;/code>&lt;/td>
+ &lt;td>Temporary processing work directory&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>CAQRN_SLURM_PARTITION&lt;/code>&lt;/td>
+ &lt;td>&lt;code>dev&lt;/code>&lt;/td>
+ &lt;td>Partition used for Slurm job submission&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>CAQRN_SLURM_ACCOUNT&lt;/code>&lt;/td>
+ &lt;td>&lt;code>caqrn-dev&lt;/code>&lt;/td>
+ &lt;td>Account used for Slurm job submission&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>CAQRN_JOB_PREFIX&lt;/code>&lt;/td>
+ &lt;td>&lt;code>${USER}_test_&lt;/code>&lt;/td>
+ &lt;td>Prefix for Slurm job names&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+
+ &lt;/div>
+ &lt;div class="tab-body tab-pane fade"
+ id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab" tabindex="0">
+ &lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Variable&lt;/th>
+ &lt;th>Value&lt;/th>
+ &lt;th>Purpose&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;code>CAQRN_ENV&lt;/code>&lt;/td>
+ &lt;td>&lt;code>staging&lt;/code>&lt;/td>
+ &lt;td>Environment identification&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>CAQRN_CODE_ROOT&lt;/code>&lt;/td>
+ &lt;td>&lt;code>/projects/caqrn/develop/code&lt;/code>&lt;/td>
+ &lt;td>Root directory for source code&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>CAQRN_CONFIG_PATH&lt;/code>&lt;/td>
+ &lt;td>&lt;code>/projects/caqrn/develop/code/caqrn-config/dev&lt;/code>&lt;/td>
+ &lt;td>Configuration files directory&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>CAQRN_DATA_ROOT&lt;/code>&lt;/td>
+ &lt;td>&lt;code>/projects/caqrn/develop/data&lt;/code>&lt;/td>
+ &lt;td>Root directory for data storage&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>CAQRN_LOG_ROOT&lt;/code>&lt;/td>
+ &lt;td>&lt;code>/projects/caqrn/develop/logs&lt;/code>&lt;/td>
+ &lt;td>Root directory for log files&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>CAQRN_INCOMING_DATA&lt;/code>&lt;/td>
+ &lt;td>&lt;code>/projects/caqrn/develop/data/incoming&lt;/code>&lt;/td>
+ &lt;td>Raw sensor data input&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>CAQRN_TEMP_DIR&lt;/code>&lt;/td>
+ &lt;td>&lt;code>/projects/caqrn/develop/data/processing&lt;/code>&lt;/td>
+ &lt;td>Temporary processing work directory&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>CAQRN_SLURM_PARTITION&lt;/code>&lt;/td>
+ &lt;td>&lt;code>standard&lt;/code>&lt;/td>
+ &lt;td>Partition used for Slurm job submission&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>CAQRN_SLURM_ACCOUNT&lt;/code>&lt;/td>
+ &lt;td>&lt;code>caqrn&lt;/code>&lt;/td>
+ &lt;td>Account used for Slurm job submission&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>CAQRN_JOB_PREFIX&lt;/code>&lt;/td>
+ &lt;td>&lt;code>staging_&lt;/code>&lt;/td>
+ &lt;td>Prefix for Slurm job names&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+
+ &lt;/div>
+ &lt;div class="tab-body tab-pane fade"
+ id="tabs-00-02" role="tabpanel" aria-labelled-by="tabs-00-02-tab" tabindex="0">
+ &lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Variable&lt;/th>
+ &lt;th>Value&lt;/th>
+ &lt;th>Purpose&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;code>CAQRN_ENV&lt;/code>&lt;/td>
+ &lt;td>&lt;code>production&lt;/code>&lt;/td>
+ &lt;td>Environment identification&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>CAQRN_CODE_ROOT&lt;/code>&lt;/td>
+ &lt;td>&lt;code>/projects/caqrn/production/code&lt;/code>&lt;/td>
+ &lt;td>Root directory for source code&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>CAQRN_CONFIG_PATH&lt;/code>&lt;/td>
+ &lt;td>&lt;code>/projects/caqrn/production/code/caqrn-config/prod&lt;/code>&lt;/td>
+ &lt;td>Configuration files directory&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>CAQRN_DATA_ROOT&lt;/code>&lt;/td>
+ &lt;td>&lt;code>/projects/caqrn/production/data&lt;/code>&lt;/td>
+ &lt;td>Root directory for data storage&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>CAQRN_LOG_ROOT&lt;/code>&lt;/td>
+ &lt;td>&lt;code>/projects/caqrn/production/logs&lt;/code>&lt;/td>
+ &lt;td>Root directory for log files&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>CAQRN_INCOMING_DATA&lt;/code>&lt;/td>
+ &lt;td>&lt;code>/projects/caqrn/production/data/incoming&lt;/code>&lt;/td>
+ &lt;td>Raw sensor data input&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>CAQRN_TEMP_DIR&lt;/code>&lt;/td>
+ &lt;td>&lt;code>/projects/caqrn/production/data/processing&lt;/code>&lt;/td>
+ &lt;td>Temporary processing work directory&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>CAQRN_SLURM_PARTITION&lt;/code>&lt;/td>
+ &lt;td>&lt;code>standard&lt;/code>&lt;/td>
+ &lt;td>Partition used for Slurm job submission&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>CAQRN_SLURM_ACCOUNT&lt;/code>&lt;/td>
+ &lt;td>&lt;code>caqrn&lt;/code>&lt;/td>
+ &lt;td>Account used for Slurm job submission&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>CAQRN_JOB_PREFIX&lt;/code>&lt;/td>
+ &lt;td>&lt;code>prod_&lt;/code>&lt;/td>
+ &lt;td>Prefix for Slurm job names&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+
+ &lt;/div>
+&lt;/div>
+
+&lt;h2 id="variables">Variables&lt;/h2>
+&lt;p>Should put some text here.&lt;/p></description></item></channel></rss>
