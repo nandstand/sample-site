@@ -65,15 +65,35 @@ Some information about how the project uses the environment variables during job
 
 {{< /tabpane >}}
 
+---
 
+## CAQRN_ENV
 
+**Purpose:** Identifies the current environment context.
 
-## Variables
+| Environment | Value |
+|-------------|-------|
+| Production | `production` |
+| Staging | `staging` |
+| Sandbox | `development` |
 
-Should put some text here.
+**Usage:** Used by Slurm job scripts to determine which Python virtual environment to activate at job execution time.
 
-### CAQRN_ENV
+---
 
+## CAQRN_CODE_ROOT
+
+**Purpose**: Root directory containing project source code repositories.
+
+| Environment | Value |
+|-------------|-------|
+| Production | `/projects/caqrn/production/code` |
+| Staging | `/projects/caqrn/develop/code` |
+| Sandbox | `$HOME/caqrn-sandbox/code` |
+
+**Usage**: Referenced by scripts to locate project modules and executables. Used in `PYTHONPATH` construction.
+
+---
 
 ## Environment scripts
 
