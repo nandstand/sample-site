@@ -35,3 +35,14 @@ $body-color: #000000 !default;
 .td-main main {
     padding-top: 80px !important;
 }
+
+.tab-pane {
+  .table-striped {
+    --bs-table-bg: #f8f9fa; 
+    background-color: #f8f9fa; 
+    tbody > tr:nth-of-type(odd) {
+        --bs-table-striped-bg: #ffffff; 
+        background-color: #ffffff;
+    }
+  }
+}
