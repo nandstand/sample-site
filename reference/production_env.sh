@@ -1,8 +1,7 @@
 #!/bin/bash
 # CAQRN Production environment script
-# Used for production jobs
 
-# Activate the python virtual environment
+# Activate the Python virtual environment
 source /projects/caqrn/production/venv/bin/activate
 
 # Environment
