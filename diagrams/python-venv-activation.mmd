@@ -1,0 +1,15 @@
+flowchart LR
+    subgraph LN ["Login Node"]
+        direction TB
+        A1["Source Environment Script<br/>(manual or scrontab)"] --> A2["Set Environment Variables<br/>($CAQRN_ENV)"]
+        A2 --> A3["Activate Python venv<br/>(current shell)"]
+        A3 --> A4["Submit Slurm Job<br/>Export Environment Variables<br/>(via sbatch argument)"]
+    end
+    
+    subgraph CN ["Compute Node"]
+        direction TB
+        B1["Slurm Job Script Executes<br/>(processing_job.sh)"] --> B2["Use $CAQRN_ENV to Determine Job Context"]
+        B2 --> B3["Reactivate Python venv"] 
+    end
+    
+    LN --> CN
