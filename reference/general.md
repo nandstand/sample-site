@@ -90,7 +90,6 @@ General
     logs/
       processing/
       slurm/
-      cron/
     venv/
   shared/
     data/
@@ -112,6 +111,5 @@ General
   logs/
     processing/
     slurm/
-    cron/
   venv/
 ```
