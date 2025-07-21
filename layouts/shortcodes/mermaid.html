@@ -1,0 +1,7 @@
+{{- $file := .Get 0 -}}
+{{- $path := printf "/diagrams/%s.mmd" $file -}}
+{{- if fileExists $path -}}
+{{- $content := readFile $path -}}
+{{- $markdown := printf "```mermaid\n%s\n```" $content -}}
+{{ .Page.RenderString $markdown }}
+{{- end -}}
