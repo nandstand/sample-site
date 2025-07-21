@@ -43,6 +43,43 @@ git clone git@gitlab.coast-state.edu:caqrn/caqrn-processing.git
 git clone git@gitlab.coast-state.edu:caqrn/caqrn-config.git
 ```
 
+After cloning, you should have the following repository structures in your `code` directory:
+
+{{< cardpane >}}
+{{< card header="caqrn-processing" code=true lang="text" >}}
+caqrn-processing/
+├── src/
+│   ├── __init__.py
+│   ├── ingest.py
+│   ├── processing.py
+│   ├── utils.py
+├── scripts/
+│   ├── sandbox_env.sh
+│   ├── production_env.sh
+│   ├── staging_env.sh
+│   ├── submit_daily_job.sh
+│   └── processing_job.sh
+├── requirements.txt
+└── README.md
+{{< /card >}}
+{{< card header="caqrn-config" code=true lang="text" >}}
+caqrn-config/
+├── production/
+│   ├── ingest.yml
+│   ├── processing.yml
+│   ├── system.yml
+│   └── monitoring.yml
+├── staging/
+│   ├── ingest.yml
+│   ├── processing.yml
+│   ├── system.yml
+│   └── monitoring.yml
+├── docs/
+│   └── deployment.md
+└── README.md
+{{< /card >}}
+{{< /cardpane >}}
+
 ## Create a Python virtual environment
 
 Create an isolated Python environment for your sandbox dependencies:
