@@ -158,7 +158,7 @@ Used to construct paths to application logs at `$CAQRN_LOG_ROOT/processing/`.
 | Staging | `/projects/caqrn/develop/data/incoming` |
 | Sandbox | `/projects/caqrn/shared/data/incoming` |
 
-**Usage**: Processing jobs read input files from date-based subdirectories under this path. 
+**Usage**: Processing jobs read input files from date-based subdirectories under this path.
 By default, sandbox environments use the staging environment's downloaded sensor data, shared at `/projects/caqrn/shared/data/incoming`.
 
 ---
@@ -216,22 +216,3 @@ By default, sandbox environments use the staging environment's downloaded sensor
 | Sandbox | `${USER}_test_` |
 
 **Usage**: Prepended to job names in submission scripts. Helps identify job source in queue listings and log files.
-
----
-
-## Environment scripts
-
-Something about the project using environment scripts for different job contexts.
-Briefly explain that scheduled staging and production jobs use these environment scripts.
-
-{{< tabpane lang="bash" >}}
-{{< tab header="Sandbox" >}}
-{{< include-file "/reference/sandbox_env.sh" >}}
-{{< /tab >}}
-{{< tab header="Staging" >}}
-{{< include-file "/reference/staging_env.sh" >}}
-{{< /tab >}}
-{{< tab header="Production" >}}
-{{< include-file "/reference/production_env.sh" >}}
-{{< /tab >}}
-{{< /tabpane >}}
