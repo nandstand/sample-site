@@ -43,7 +43,7 @@ git clone git@gitlab.coast-state.edu:caqrn/caqrn-processing.git
 git clone git@gitlab.coast-state.edu:caqrn/caqrn-config.git
 ```
 
-After cloning, you should have the following repository structures in your `code` directory:
+After cloning, you'll have the following repository structures in your `code` directory:
 
 {{< cardpane >}}
 {{< card header="caqrn-processing" code=true lang="text" >}}
