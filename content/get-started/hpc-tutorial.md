@@ -66,7 +66,11 @@ source scripts/sandbox_env.sh
 ```
 
 Notice that your command prompt now shows the name of your activated Python virtual environment.
-The sandbox script activates your Python virtual environment, and sets environment variables used during job submission and execution.
+The sandbox environment script activates your Python virtual environment, and sets environment variables used during job submission and execution.
+
+The following flowchart summarizes how Python virtual environments are activated on both the login and compute nodes.
+
+{{< mermaid "python-venv-flow" >}}
 
 6. Verify that the script set up your environment by checking a few key variables:
 

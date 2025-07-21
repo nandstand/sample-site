@@ -5,7 +5,7 @@ flowchart LR
         A2["Activate Python venv<br/>(current shell)"] --> A3["Submit Slurm Job<br/>Export Environment Variables<br/>(via sbatch argument)"]
     end
     
-    subgraph CN ["Compute Node"]
+    subgraph CN ["Compute Node(s)"]
         direction TB
         B1["Slurm Job Script Executes<br/>(processing_job.sh)"] --> B2["Use $CAQRN_ENV to Determine Job Context"]
         B2 --> B3["Reactivate Python venv"] 

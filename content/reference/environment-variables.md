@@ -79,6 +79,8 @@ Some information about how the project uses the environment variables during job
 
 **Usage:** Used by Slurm job scripts to determine which Python virtual environment to activate at job execution time.
 
+The following flowchart summarizes how the active environment's associated Python virtual environment is reactivated on the compute node(s).
+
 {{< mermaid "python-venv-flow" >}}
 
 ---
