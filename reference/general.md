@@ -81,7 +81,7 @@ General
         scripts/
         requirements.txt
       caqrn-config/
-        dev/
+        staging/
         prod/
     data/
       incoming/
