@@ -79,6 +79,8 @@ Some information about how the project uses the environment variables during job
 
 **Usage:** Used by Slurm job scripts to determine which Python virtual environment to activate at job execution time.
 
+{{< mermaid "python-venv-flow" >}}
+
 ---
 
 ## CAQRN_CODE_ROOT
