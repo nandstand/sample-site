@@ -8,10 +8,10 @@ weight: 50
 
 {{% alert color="success" %}}
 
-For this sample, I used Mermaid and a custom Hugo shortcode to create a single-sourced diagram from a Mermaid text file.
+On this page, I used Mermaid and a custom Hugo shortcode to single source a diagram from a Mermaid text file.
 I also modified a shortcode provided by the Docsy theme to build the quick reference at the top of the page.
 
-You can view the source files for each of these in the site's GitHub repo. See the [diagram's source file](https://github.com/nandstand/sample-site/blob/main/diagrams/python-venv-flow.mmd), the [custom shortcode it uses](https://github.com/nandstand/sample-site/blob/main/layouts/shortcodes/mermaid.html), and the [modified version of Docsy's tabpane shortcode](https://github.com/nandstand/sample-site/blob/main/layouts/shortcodes/tabpane.html).
+You can view the source for each of these in the site's GitHub repository. See the [diagram's source file](https://github.com/nandstand/sample-site/blob/main/diagrams/python-venv-flow.mmd), the [shortcode used to render it](https://github.com/nandstand/sample-site/blob/main/layouts/shortcodes/mermaid.html), and the [modified version of Docsy's tabpane shortcode](https://github.com/nandstand/sample-site/blob/main/layouts/shortcodes/tabpane.html).
 
 {{% /alert %}}
 
