@@ -1,7 +1,7 @@
 ---
 title: 'Environment variables'
 linkTitle: 'Environment variables'
-description: 'Description goes here'
+description: 'Environment variables for each software deployment, including file paths and Slurm settings'
 type: 'docs'
 weight: 50 
 ---
@@ -9,13 +9,14 @@ weight: 50
 {{% alert color="success" %}}
 
 This page uses Mermaid and a custom Hugo shortcode to render a diagram from a single source file.
-It also makes use of a modified Docsy theme shortcode to generate the quick reference table at the top of the page.
+It also makes use of a modified Docsy theme shortcode to render the quick reference table at the top of the page.
 
 You can view the source for each of these in the site's GitHub repository. See the [diagram's source file](https://github.com/nandstand/sample-site/blob/main/diagrams/python-venv-flow.mmd), the [shortcode used to render it](https://github.com/nandstand/sample-site/blob/main/layouts/shortcodes/mermaid.html), and the [modified version of Docsy's tabpane shortcode](https://github.com/nandstand/sample-site/blob/main/layouts/shortcodes/tabpane.html).
 
 {{% /alert %}}
 
-Some information about how the project uses the environment variables during job submission and execution.
+Environment variables are used to configure deployment-specific settings for processing jobs, like file paths and Slurm settings.  
+These variables are set automatically when sourcing the environment scripts, but you can modify them to change settings like which Slurm partition a job is submitted to, or to configure a new environment.
 
 ## Quick reference
 
