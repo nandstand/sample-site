@@ -1,7 +1,7 @@
 ---
 title: 'Get started'
 linkTitle: 'Get started'
-description: 'Description goes here'
+description: 'Developer guides and tutorials for the CAQRN project'
 type: 'docs'
 weight: 20
 simple_list: false
