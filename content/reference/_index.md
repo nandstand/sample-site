@@ -1,7 +1,7 @@
 ---
 title: 'Reference'
 linkTitle: 'Reference'
-description: 'Description goes here'
+description: 'Reference documentation for the CAQRN project'
 type: 'docs'
 weight: 30
 ---
