@@ -8,7 +8,7 @@ no_list: true
 
 ## About this site
 
-This site hosts sample documentation for a fictional software project, meant to represent the kinds of documentation that I authored in a previous role as a developer in a scientific computing setting.
+This site hosts sample documentation for a fictional software project, meant to represent the kinds of documentation that I wrote previously as a developer in a scientific computing setting.
 
 The samples include a [how-to guide](/get-started/quickstart/), a [tutorial](/get-started/hpc-tutorial/), and a [reference document](/reference/environment-variables/).
 Before writing these samples, I drew from public resources to build reference material outlining how the project works.
@@ -17,7 +17,7 @@ To see this reference material and my research process for designing this fictio
 I built the site using Hugo, a static site generator, using the [Docsy](https://www.docsy.dev/) theme.
 The site is automatically tested and deployed to GitHub Pages via a CI/CD pipeline that includes a link checker and Markdown linter.
 To see how I set this up, see the workflow files for [CI tests](https://github.com/nandstand/sample-site/blob/main/.github/workflows/ci.yml) and [deployment](https://github.com/nandstand/sample-site/blob/main/.github/workflows/deploy.yml), or view the site's [full source](https://github.com/nandstand/sample-site).
-And if you see an error anywhere, feel free to open an issue!
+If you see an error anywhere, feel free to open an issue!
 
 All content follows Microsoft's Writing Style Guide.
 
