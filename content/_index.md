@@ -24,8 +24,7 @@ All content follows Microsoft's Writing Style Guide.
 ## Background
 
 The Coastal Air Quality Research Network (CAQRN) project is a fictional software project that generates air quality index products for public environmental health research.
-The project is maintained and deployed on a public university HPC cluster.
-For a great example of this type of infrastructure, see the [docs for Stanford's Sherlock cluster](https://www.sherlock.stanford.edu/docs/).
+The project is maintained and deployed on a public university HPC cluster (see [Stanford's Sherlock cluster](https://www.sherlock.stanford.edu/docs/) as an example).
 
-The sample documentation on this site covers some topics specific to HPC environments, like working with a batch job scheduler (I chose to write about Slurm).
+The sample documentation on this site covers some topics specific to HPC environments, like working with a batch job scheduler (I chose to write about [Slurm](https://slurm.schedmd.com/overview.html)).
 The samples also cover more common development topics, like Python virtual environments and Git workflows.
