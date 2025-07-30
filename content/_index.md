@@ -21,7 +21,7 @@ If you see an error anywhere, feel free to open an issue!
 
 All content follows Microsoft's Writing Style Guide.
 
-## Background
+## About the sample project
 
 The Coastal Air Quality Research Network (CAQRN) project is a fictional software project that generates air quality index products for public environmental health research.
 The project is maintained and deployed on a public university HPC cluster (see [Stanford's Sherlock cluster](https://www.sherlock.stanford.edu/docs/) as an example).
