@@ -6,8 +6,6 @@ type: 'docs'
 weight: 10
 ---
 
-The Coastal Air Quality Research Network (CAQRN) project is...
-
 ## Before you begin
 
 In this tutorial, you'll add a simple logging feature to the CAQRN system, and install a new dependency to the project.
