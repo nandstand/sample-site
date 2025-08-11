@@ -6,6 +6,14 @@ type: 'docs'
 weight: 5
 ---
 
+{{% alert color="success" %}}
+
+This sample represents work that I did to help standardize developer environments on a previous software project.  I collaborated with team leadership to develop a standard procedure for getting set up to work, and then created a guide for new developers on the project to use when getting started.
+
+The original document and the topics it covered are proprietary, so I created this sample to represent that work using generic software development topics like Python virtual environments and Git workflows.
+
+{{% /alert %}}
+
 ## What you'll set up
 
 A personal sandbox environment for developing, testing, and running HPC jobs on the university's Zephyr cluster.
