@@ -14,7 +14,7 @@ The samples include a [how-to guide](/get-started/quickstart/), a [tutorial](/ge
 Before writing these samples, I drew from public resources to build reference material outlining how the software project works.
 To see this reference material and my research process for designing the sample project, see the [reference](https://github.com/nandstand/sample-site/tree/main/reference) included in the site's repository.
 
-I built the site using Hugo, a static site generator, using the [Docsy](https://www.docsy.dev/) theme.
+I built the site using Hugo, a static site generator, using the Docsy theme.
 The site is automatically tested and deployed to GitHub Pages via a CI/CD pipeline that includes a link checker and Markdown linter.
 To see how I set this up, see the workflow files for [CI tests](https://github.com/nandstand/sample-site/blob/main/.github/workflows/ci.yml) and [deployment](https://github.com/nandstand/sample-site/blob/main/.github/workflows/deploy.yml), or view the site's [full source](https://github.com/nandstand/sample-site).
 
