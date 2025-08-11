@@ -6,6 +6,15 @@ type: 'docs'
 weight: 10
 ---
 
+{{% alert color="success" %}}
+
+In a previous role, I wrote documentation to teach developers new to the team how to get up and running in an HPC environment.
+This sample demonstrates that experience using different subject matter than the real work that I did.
+
+I structured this tutorial using the Diátaxis framework, which encourages teaching through action and minimizes the role of explanation in designing tutorials.
+
+{{% /alert %}}
+
 ## Before you begin
 
 In this tutorial, you'll add a simple logging feature to the CAQRN system, and install a new dependency to the project.
@@ -66,7 +75,7 @@ source scripts/sandbox_env.sh
 Notice that your command prompt now shows the name of your activated Python virtual environment.
 The sandbox environment script activates your Python virtual environment, and sets environment variables used during job submission and execution.
 
-The following flowchart summarizes how Python virtual environments are activated on both the login and compute nodes.
+The following flowchart shows how Python virtual environments are activated on both the login and compute nodes.
 
 {{< mermaid "python-venv-flow" >}}
 
