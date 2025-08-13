@@ -9,7 +9,7 @@ weight: 5
 {{% alert color="success" %}}
 
 This sample represents work that I did to help standardize developer environments on a previous software project.
-I used generic software development topics like Python virtual environments and Git workflows in place of the proprietary tools and processes from the actual work.
+It covers generic software development topics like Python virtual environments and Git workflows in place of the proprietary tools and processes from the actual work.
 
 {{% /alert %}}
 
