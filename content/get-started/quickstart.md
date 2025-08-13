@@ -99,7 +99,7 @@ python3.9 -m venv venv
 
 Use this exact location and name - it's referenced in the sandbox environment script you'll source in the next step.
 
-## Source the sandbox environment
+## Source the environment script
 
 Source the sandbox environment script in the project repository:
 
