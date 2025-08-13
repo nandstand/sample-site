@@ -8,7 +8,7 @@ no_list: true
 
 ## About this site
 
-This site hosts sample documentation for a fictional software project, meant to represent the kind of writing I did as a developer in a scientific computing setting.
+This site features sample documentation for a fictional software project, representing the kind of technical writing I've done as a developer in a scientific computing setting.
 
 The samples include a [how-to guide](/get-started/quickstart/), a [tutorial](/get-started/hpc-tutorial/), and a [reference document](/reference/environment-variables/).
 Before writing these samples, I drew from public resources to build reference material outlining how the software project works.
