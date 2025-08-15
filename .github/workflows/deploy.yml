@@ -60,7 +60,7 @@ jobs:
         uses: lycheeverse/lychee-action@v2.4.1
         with:
           args: >
-            --base https://samples.christianf.io/ 
+            --base https://portfolio.christianf.io/ 
             --timeout 20
             --no-progress
             --verbose
