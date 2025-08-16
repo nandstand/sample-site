@@ -8,7 +8,7 @@ no_list: true
 
 ## About this site
 
-This site features sample documentation for a fictional software project, representing the kind of technical writing that I authored as a developer in a scientific computing setting, where I maintained and deployed software on a high-performance computing (HPC) cluster.
+This site features sample documentation for a fictional software project, representing the kind of technical writing that I did as a developer in a scientific computing setting, where I maintained and deployed software on a high-performance computing (HPC) cluster.
 
 The samples include a [how-to guide](/get-started/quickstart/), a [tutorial](/get-started/hpc-tutorial/), and a [reference document](/reference/environment-variables/).
 Before writing these samples, I drew from public resources to build reference material outlining how the software project works.
