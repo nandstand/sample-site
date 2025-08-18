@@ -20,7 +20,7 @@ To see how I set this up, see the workflow files for [CI tests](https://github.c
 
 All content follows Microsoft's Writing Style Guide.
 
-## About the sample project
+## About the software project
 
 The Coastal Air Quality Research Network (CAQRN) generates air quality index products for public environmental health research.
 The project is maintained and deployed on a public university HPC cluster (see [Stanford's Sherlock cluster](https://www.sherlock.stanford.edu/docs/) as an example).
