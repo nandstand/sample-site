@@ -1,6 +1,6 @@
 ---
 title: 'Welcome'
-description: "Samples of the kind of work I've done writing for a developer audience, built with a docs-as-code approach"
+description: "Samples of the kind of work I've done writing for developer audiences, built with a docs-as-code approach"
 linkTitle: 'Welcome'
 type: 'docs'
 no_list: true
