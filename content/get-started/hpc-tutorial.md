@@ -11,8 +11,6 @@ weight: 10
 In a previous role, I wrote documentation to teach developers new to the team how to get up and running in an HPC environment.
 This sample demonstrates that experience but covers different subject matter than the original documents.
 
-I used writing this sample as an opportunity to learn and apply the [Diátaxis](https://diataxis.fr/) framework, which encourages teaching through action and minimizes the role of explanation when designing tutorials.
-
 {{% /alert %}}
 
 ## Before you begin
