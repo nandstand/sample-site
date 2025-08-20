@@ -16,7 +16,7 @@ To see this reference material and my research process for designing the sample 
 
 I built the site using Hugo, a static site generator, using the Docsy theme.
 The site is automatically tested and deployed to GitHub Pages via a CI/CD pipeline that includes a link checker and Markdown linter.
-To see how I set this up, see the workflow files for [CI tests](https://github.com/nandstand/sample-site/blob/main/.github/workflows/ci.yml) and [deployment](https://github.com/nandstand/sample-site/blob/main/.github/workflows/deploy.yml), or view the site's [full source](https://github.com/nandstand/sample-site).
+See the workflow files for [CI tests](https://github.com/nandstand/sample-site/blob/main/.github/workflows/ci.yml) and [deployment](https://github.com/nandstand/sample-site/blob/main/.github/workflows/deploy.yml) to see how I did it, or view the site's [full source](https://github.com/nandstand/sample-site).
 
 All content follows Microsoft's Writing Style Guide.
 
