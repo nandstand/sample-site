@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Get started on Portfolio / Christian Fuller</title><link>https://portfolio.christianf.io/get-started/</link><description>Recent content in Get started on Portfolio / Christian Fuller</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://portfolio.christianf.io/get-started/index.xml" rel="self" type="application/rss+xml"/><item><title>Quickstart</title><link>https://portfolio.christianf.io/get-started/quickstart/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://portfolio.christianf.io/get-started/quickstart/</guid><description>&lt;div class="alert alert-success" role="alert">
+
+
+ This sample represents work that I did to help standardize developer environments on a previous software project.
+It covers generic software development topics like Python virtual environments and Git workflows in place of the proprietary tools and processes from the actual work.
+
+&lt;/div>
+
+&lt;h2 id="what-youll-set-up">What you&amp;rsquo;ll set up&lt;/h2>
+&lt;p>A personal sandbox environment for developing, testing, and running HPC jobs on the university&amp;rsquo;s Zephyr cluster.
+You&amp;rsquo;ll set up directories, clone repositories, and create an isolated Python environment.&lt;/p></description></item><item><title>Develop and test your first feature on the HPC cluster</title><link>https://portfolio.christianf.io/get-started/hpc-tutorial/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://portfolio.christianf.io/get-started/hpc-tutorial/</guid><description>&lt;div class="alert alert-success" role="alert">
+
+
+ In a previous role, I wrote documentation to teach developers new to the team how to get up and running in an HPC environment.
+This sample demonstrates that experience but covers different subject matter than the original documents.
+
+&lt;/div>
+
+&lt;h2 id="before-you-begin">Before you begin&lt;/h2>
+&lt;p>In this tutorial, you&amp;rsquo;ll add a simple logging feature to the CAQRN system, and install a new dependency to the project.
+You&amp;rsquo;ll test the feature by submitting a job to be run on the HPC cluster&amp;rsquo;s compute nodes from your sandbox environment.&lt;/p></description></item></channel></rss>
