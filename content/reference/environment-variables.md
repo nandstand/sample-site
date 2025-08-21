@@ -8,8 +8,8 @@ weight: 50
 
 {{% alert color="success" %}}
 
-This page uses Mermaid and a custom Hugo shortcode to render a diagram from a single source file.
-It also makes use of a modified Docsy theme shortcode to render the quick reference table at the top of the page.
+To render a diagram on this page from a single source file, I used Mermaid and a custom Hugo shortcode.
+I also modified a Docsy theme shortcode to support rendering tables within tab panes for the quick reference at the top of the page.
 
 You can view the source for each of these in the site's GitHub repository. See the [diagram's source file](https://github.com/nandstand/sample-site/blob/main/diagrams/python-venv-flow.mmd), the [shortcode used to render it](https://github.com/nandstand/sample-site/blob/main/layouts/shortcodes/mermaid.html), and the [modified version of Docsy's tabpane shortcode](https://github.com/nandstand/sample-site/blob/main/layouts/shortcodes/tabpane.html).
 
