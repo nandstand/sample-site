@@ -1,6 +1,6 @@
 ---
 title: 'Welcome'
-description: "Samples of the kind of work I've done writing for developer audiences, built with a docs-as-code approach"
+description: "Samples of my work, built using a docs-as-code approach"
 linkTitle: 'Welcome'
 type: 'docs'
 no_list: true
@@ -8,32 +8,20 @@ no_list: true
 
 ## Overview
 
-The writing samples featured on this site represent documentation that I've authored for software teams while working in a scientific computing setting.
-They emulate developer onboarding material, written for a fictional research project maintained on a public university high-performance computing (HPC) cluster.
+This portfolio contains samples of my work—you'll find a [setup guide](https://portfolio.christianf.io/get-started/quickstart/), a [tutorial](https://portfolio.christianf.io/get-started/hpc-tutorial/), and a [reference document](https://portfolio.christianf.io/reference/environment-variables/).
+These are sample documents for a fictional software project, designed to emulate the kind of writing that I've done as a developer working in a high-performance computing (HPC) setting.
 
-### Featured documentation
+Each of these documents covers topics related to setting up for work in an HPC environment.
+Some topics are universal to software development in any setting (e.g., Git workflows, managing software dependencies).
+Others relate to the specific quirks of working with distributed software.
+In either case, I try to keep things as simple and as clear as possible, while presenting a scenario that is plausible and representative of my real work.
 
-The samples include a [how-to guide](/get-started/quickstart/), a [tutorial](/get-started/hpc-tutorial/), and a [reference document](/reference/environment-variables/).
+## How I built this site
 
-Something about motivation for writing these, how they map to the real work that I did.
-
-### What this documentation covers
-
-The writing samples on this site cover some topics specific to HPC environments, like working with a batch job scheduler.
-The samples also cover more common development topics, like Python dependency management and version control using Git.
-
-The Coastal Air Quality Research Network (CAQRN) generates air quality index products for public environmental health research.
-The project is maintained and deployed on a public university HPC cluster (see [Stanford's Sherlock cluster](https://www.sherlock.stanford.edu/docs/) as an example).
-
-## About this site
-
-I built this site using Hugo, a static site generator, using the Docsy theme.
-The site is automatically tested and deployed to GitHub Pages via a CI/CD pipeline that includes a link checker and Markdown linter.
-See the workflow files for [CI tests](https://github.com/nandstand/sample-site/blob/main/.github/workflows/ci.yml) and [deployment](https://github.com/nandstand/sample-site/blob/main/.github/workflows/deploy.yml) to see how I did it, or view the site's [full source](https://github.com/nandstand/sample-site).
+I built this site using Hugo, a static site generator.
+I developed a CI/CD pipeline using GitHub Actions that includes a Markdown linter and a link checker.
+As I make changes to the site's source code or content, it is automatically built, tested, and deployed via GitHub Pages.
 
 ## Research and writing process
-
-Before writing these samples, I drew from public resources to build reference material outlining how the software project works.
-To see this reference material and my research process for designing the sample project, see the [reference](https://github.com/nandstand/sample-site/tree/main/reference) included in the site's repository.
 
 All content follows Microsoft's Writing Style Guide.
