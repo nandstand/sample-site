@@ -210,7 +210,7 @@ Notice that settings such as the compute partition and number of compute nodes f
 
 ```
 JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
-12345       dev alice_t   molina  R       2:34      4 node[01-04]
+12345       dev alice_t     alice  R       2:34      4 node[01-04]
 ```
 
 In general, test jobs should be submitted to the cluster's development partition (`dev`), which provides lower-cost, scaled-back compute resources appropriate for testing.
@@ -238,7 +238,7 @@ tail -f alice_test_daily_20250101_12345.out
 ```
 
 The daily processing job can take up to 30 minutes to complete.
-Now is a good time for a coffee break!
+This is a good time for a coffee break!
 
 Your logging function will be called toward the end of execution.
 
