@@ -37,7 +37,7 @@ To add the logging feature, you need to modify an existing file in the codebase.
 1. Access a login node on the cluster, replacing the username below with your own:
 
 ```bash
-ssh molina@zephyr.login.coast-state.edu
+ssh alice@zephyr.login.coast-state.edu
 ```
 
 Login nodes are shared computing resources where users prepare and submit jobs to the cluster's compute nodes.
@@ -88,9 +88,9 @@ echo "Data root: $CAQRN_DATA_ROOT"
 You should see output similar to:
 
 ```
-Python virtual environment: /home/molina/caqrn-sandbox/venv
-Code root: /home/molina/caqrn-sandbox/code
-Data root: /home/molina/caqrn-sandbox/data
+Python virtual environment: /home/alice/caqrn-sandbox/venv
+Code root: /home/alice/caqrn-sandbox/code
+Data root: /home/alice/caqrn-sandbox/data
 ```
 
 ## 2. Manage project dependencies using pip
@@ -202,7 +202,7 @@ It explicitly exports your environment to be available to the process running on
 2. Check your job's status in the queue.  Replace the username below with your own to get a list of jobs submitted under your username from Slurm.
 
 ```bash
-squeue -u molina
+squeue -u alice
 ```
 
 The output shows your job details.
@@ -210,7 +210,7 @@ Notice that settings such as the compute partition and number of compute nodes f
 
 ```
 JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
-12345       dev molina_t   molina  R       2:34      4 node[01-04]
+12345       dev alice_t   molina  R       2:34      4 node[01-04]
 ```
 
 In general, test jobs should be submitted to the cluster's development partition (`dev`), which provides lower-cost, scaled-back compute resources appropriate for testing.
@@ -226,15 +226,15 @@ cd ~/caqrn-sandbox/logs/slurm
 4. Find the log file for your test job, which includes your username and the job ID:
 
 ```bash
-ls molina_test_daily_*
+ls alice_test_daily_*
 ```
 
-You should see a file like `molina_test_daily_20250101_12345.out`.
+You should see a file like `alice_test_daily_20250101_12345.out`.
 
 5. Monitor job progress by following the log file:
 
 ```bash
-tail -f molina_test_daily_20250101_12345.out
+tail -f alice_test_daily_20250101_12345.out
 ```
 
 The daily processing job can take up to 30 minutes to complete.
@@ -248,9 +248,9 @@ Your logging function will be called toward the end of execution.
 +---------------------+------------------------------------------+
 | Variable            | Value                                    |
 +=====================+==========================================+
-| Virtual environment | /home/molina/caqrn-sandbox/venv          |
-| Code root path      | /home/molina/caqrn-sandbox/code          |
-| Data root path      | /home/molina/caqrn-sandbox/data          |
+| Virtual environment | /home/alice/caqrn-sandbox/venv          |
+| Code root path      | /home/alice/caqrn-sandbox/code          |
+| Data root path      | /home/alice/caqrn-sandbox/data          |
 | Input data path     | /projects/caqrn/shared/data/incoming     |
 +---------------------+------------------------------------------+
 ```
