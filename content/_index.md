@@ -8,7 +8,7 @@ no_list: true
 
 ## Overview
 
-This portfolio contains samples of my work—you'll find a [setup guide](https://portfolio.christianf.io/get-started/quickstart/), a [tutorial](https://portfolio.christianf.io/get-started/hpc-tutorial/), and a [reference document](https://portfolio.christianf.io/reference/environment-variables/).
+This portfolio contains samples of my work—you'll find a [setup guide](/get-started/quickstart/), a [tutorial](/get-started/hpc-tutorial/), and a [reference document](/reference/environment-variables/).
 These are sample documents for a fictional software project, designed to emulate the kind of writing that I've done as a developer working in a high-performance computing (HPC) setting.
 
 Each of these documents covers topics related to setting up for work in an HPC environment.
