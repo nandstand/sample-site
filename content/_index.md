@@ -14,7 +14,7 @@ These are sample documents for a fictional software project, designed to emulate
 Each of these documents covers topics related to setting up for work in an HPC environment.
 Some topics are universal to software development in any setting (e.g., Git workflows, managing software dependencies).
 Others relate to the specific quirks of working with software deployed on an HPC cluster.
-In either case, I try to keep things as simple and as clear as possible, while presenting a scenario that is plausible and representative of my real work.
+In either case, I try to keep things as simple as possible, while presenting a scenario that is plausible and representative of my real work.
 
 ## How I built this site
 
@@ -30,4 +30,4 @@ To see how I set up this pipeline, see the workflow files for [CI tests](https:/
 
 ## Research and writing process
 
-All content follows Microsoft's Writing Style Guide.
+All content in the sample documentation follows Microsoft's Writing Style Guide.
