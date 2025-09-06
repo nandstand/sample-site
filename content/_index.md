@@ -8,7 +8,7 @@ no_list: true
 
 ## About this portfolio
 
-This portfolio contains sample developer documentation that demonstrates my approach to writing for technical audiences using modern documentation tools and techniques.
+This portfolio contains sample documentation that demonstrates my approach to technical writing using modern documentation tools and techniques.
 The samples include a how-to guide, a tutorial, and a reference document.
 
 As a developer, I've worked on scientific computing projects deployed on high-performance computing clusters.
