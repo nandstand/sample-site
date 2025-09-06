@@ -11,11 +11,11 @@ no_list: true
 This portfolio contains sample documentation that demonstrates my approach to technical writing using modern documentation tools and techniques.
 The samples include a how-to guide, a tutorial, and a reference document.
 
-As a developer, I've worked on scientific computing projects deployed on high-performance computing clusters.
-I did XYZ and wrote XYZ.
+As a developer, I've worked on scientific computing projects using high-performance computing resources.
+This work involved maintaining software distributed on HPC infrastructure, and helping new team members work confidently with the tools used in these settings.
 
-I wanted to present samples that reflect my technical skill set and background, and showcase my experience writing for developers to meet XYZ need(s).
-I designed a fictitious XYZ, and used that as the subject for this set of docs that cover XYZ in a setting where getting started as a developer can be challenging.
+I wanted to present samples that reflect my technical skill set and background, and showcase my experience writing to address practical needs in a production setting.
+I designed a fictitious software project—an air quality monitoring system maintained by a university research team—and created documentation covering developer onboarding in a setting where getting started can be challenging.
 
 ## How I built this site
 
