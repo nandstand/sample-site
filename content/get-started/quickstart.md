@@ -8,8 +8,12 @@ weight: 5
 
 {{% alert color="success" %}}
 
-This sample represents work that I did to help standardize developer environments on a previous software project.
-It covers generic software development topics like Python virtual environments and Git workflows in place of the proprietary tools and processes from the actual work.
+This writing sample covers a standard procedure for setting up a development environment as a developer working on the fictitious CAQRN project.
+It touches on common development topics like managing repositories with Git, and installing dependencies using Python virtual environments and pip.
+
+Clear instructions for getting started on a project can make a world of difference.
+Developers can usually figure out how to do these kinds of things on their own, but having a standard procedure can prevent headaches and confusion down the road.
+It's easier to help someone who is just starting out if everyone is on the same page!
 
 {{% /alert %}}
 
