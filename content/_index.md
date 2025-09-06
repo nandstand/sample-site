@@ -9,7 +9,7 @@ no_list: true
 ## About this portfolio
 
 This portfolio contains sample documentation that demonstrates my approach to technical writing using modern documentation tools and techniques.
-The samples include a how-to guide, a tutorial, and a reference document.
+The samples include a [how-to guide](/get-started/quickstart), a [tutorial](/get-started/hpc-tutorial), and a [reference document](/reference/environment-variables).
 
 As a developer, I've worked on scientific computing projects using high-performance computing resources.
 This work involved maintaining software distributed on HPC infrastructure, and helping new team members work confidently with the tools used in these settings.
@@ -30,4 +30,11 @@ To see how I set up this pipeline, see the workflow files for [CI tests](https:/
 
 ## Research and writing process
 
-All content in the sample documentation follows Microsoft's Writing Style Guide.
+Along with the source code for this site and its content, I also provide an open look into my research process.
+You can view my full [research notes](https://github.com/nandstand/sample-site/tree/main/reference) in the site repository.
+
+Research is a large part of the writing process.
+I wanted to show my approach, and offer transparency about the resources that I used when designing the scenario presented in this documentation.
+
+For the writing and editing part of the process, I used Microsoft's Writing Style Guide to achieve a consistent tone.
+I also used this project as an opportunity to learn and apply [Diátaxis](https://diataxis.fr/), which is an established approach to authoring and organizing technical documentation.
