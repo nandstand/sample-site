@@ -8,8 +8,10 @@ weight: 10
 
 {{% alert color="success" %}}
 
-In a previous role, I wrote documentation to teach developers new to the team how to get up and running in an HPC environment.
-This sample demonstrates that experience but covers different subject matter than the original documents.
+This tutorial covers HPC-specific topics and tools, like working with a batch scheduler (Slurm).
+It's designed to help the reader build a general understanding of how software runs on HPC architecture, and teach best practices for feature development, including adding new project dependencies.
+
+This sample is partly inspired by work that I did in a previous role to help onboard new team members to a project, where I taught Git workflows and helped developers set up their environments.
 
 {{% /alert %}}
 
