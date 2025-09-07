@@ -1,29 +1,40 @@
 ---
 title: 'Welcome'
-description: "Samples of the kind of work I've done writing for developer audiences, built with a docs-as-code approach"
+description: "Sample developer documentation, built using a docs-as-code approach"
 linkTitle: 'Welcome'
 type: 'docs'
 no_list: true
 ---
 
-## About this site
+## About this portfolio
 
-This site features sample documentation for a fictional software project, representing the kind of technical writing that I did as a developer in a scientific computing setting, where I maintained and deployed software on a high-performance computing (HPC) cluster.
+This portfolio contains sample documentation that demonstrates my approach to technical writing using modern documentation tools and techniques.
+The samples include a [how-to guide](/get-started/quickstart), a [tutorial](/get-started/hpc-tutorial), and a [reference document](/reference/environment-variables).
 
-The samples include a [how-to guide](/get-started/quickstart/), a [tutorial](/get-started/hpc-tutorial/), and a [reference document](/reference/environment-variables/).
-Before writing these samples, I drew from public resources to build reference material outlining how the software project works.
-To see this reference material and my research process for designing the sample project, see the [reference](https://github.com/nandstand/sample-site/tree/main/reference) included in the site's repository.
+As a developer, I've worked on scientific computing projects using high-performance computing resources.
+This work involved maintaining software distributed on HPC infrastructure, and teaching new team members how to work confidently with the tools used in these settings.
 
-I built the site using Hugo, a static site generator, using the Docsy theme.
-The site is automatically tested and deployed to GitHub Pages via a CI/CD pipeline that includes a link checker and Markdown linter.
-See the workflow files for [CI tests](https://github.com/nandstand/sample-site/blob/main/.github/workflows/ci.yml) and [deployment](https://github.com/nandstand/sample-site/blob/main/.github/workflows/deploy.yml) to see how I did it, or view the site's [full source](https://github.com/nandstand/sample-site).
+I wanted to present samples that reflect my technical skill set and background, and showcase my experience writing to address the needs of software teams in production settings.
+I designed a fictitious software project—an air quality monitoring system maintained by a university research team—and created documentation covering developer onboarding in a setting where getting started can be challenging.
 
-All content follows Microsoft's Writing Style Guide.
+## How I built this site
 
-## About the software project
+I built this site using Hugo, a static site generator.
+I used Markdown to author content, and a combination of YAML and SCSS to configure the site's presentation.
+In some places, I extended the site's theme to add new features, or to fix an issue with formatting.
+The site's [full source](https://github.com/nandstand/sample-site) is available on GitHub.
 
-The Coastal Air Quality Research Network (CAQRN) generates air quality index products for public environmental health research.
-The project is maintained and deployed on a public university HPC cluster (see [Stanford's Sherlock cluster](https://www.sherlock.stanford.edu/docs/) as an example).
+To manage testing and deploying the site, I developed a CI/CD pipeline using GitHub Actions that includes a Markdown linter and a link checker.
+As I make changes to the site's source code or content, it is automatically built, tested, and deployed via GitHub Pages.
+To see how I set up this pipeline, see the workflow files for [CI tests](https://github.com/nandstand/sample-site/blob/main/.github/workflows/ci.yml) and [deployment](https://github.com/nandstand/sample-site/blob/main/.github/workflows/deploy.yml).
 
-The writing samples on this site cover some topics specific to HPC environments, like working with a batch job scheduler.
-The samples also cover more common development topics, like Python dependency management and version control using Git.
+## Research and writing process
+
+Along with the source code for this site and its content, I also provide an open look into my research process.
+You can view my full [research notes](https://github.com/nandstand/sample-site/tree/main/reference) in the site repository.
+
+Research is a large part of the writing process.
+I wanted to show my approach, and offer transparency about the resources that I used when designing the scenario presented in this documentation.
+
+I used Microsoft's Writing Style Guide when writing and proofreading content.
+I also used this project as an opportunity to learn and apply [Diátaxis](https://diataxis.fr/), which is a system for authoring and organizing technical documentation.

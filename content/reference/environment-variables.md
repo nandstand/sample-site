@@ -15,7 +15,7 @@ You can view the source for each of these in the site's GitHub repository. See t
 
 {{% /alert %}}
 
-Environment variables are used to configure deployment-specific settings for processing jobs, like file paths and Slurm settings.  
+Environment variables are used to configure deployment-specific settings for processing jobs, like file paths and Slurm settings.
 These variables are set automatically when sourcing the environment scripts, but you can modify them to change settings like which Slurm partition a job is submitted to, or to configure a new environment.
 
 ## Quick reference

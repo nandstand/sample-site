@@ -30,7 +30,7 @@ markup:
 menu:
   main:
     - name: GitHub
-      url: https://github.com/nandstand/sample-site
+      url: https://github.com/nandstand/
       weight: 20
     - name: Personal Site
       url: https://christianf.io/

@@ -8,8 +8,10 @@ weight: 10
 
 {{% alert color="success" %}}
 
-In a previous role, I wrote documentation to teach developers new to the team how to get up and running in an HPC environment.
-This sample demonstrates that experience but covers different subject matter than the original documents.
+This tutorial covers HPC-specific topics and tools, like working with a batch scheduler (Slurm).
+It's designed to help the reader build a general understanding of how software runs on HPC architecture, and teach best practices for feature development, including adding new project dependencies.
+
+This sample is partly inspired by work that I did in a previous role to help onboard new team members to a project, where I taught Git workflows and helped developers set up their environments.
 
 {{% /alert %}}
 
@@ -20,7 +22,7 @@ You'll test the feature by submitting a job to be run on the HPC cluster's compu
 
 ### What you'll need
 
-- A sandbox environment on the Zephyr cluster (refer to the [Quickstart](/get-started/quickstart/))
+- A sandbox environment on the Zephyr cluster (see the [Quickstart](/get-started/quickstart/))
 - Familiarity with Git
 - Familiarity with Python virtual environments
 
@@ -37,7 +39,7 @@ To add the logging feature, you need to modify an existing file in the codebase.
 1. Access a login node on the cluster, replacing the username below with your own:
 
 ```bash
-ssh molina@zephyr.login.coast-state.edu
+ssh alice@zephyr.login.coast-state.edu
 ```
 
 Login nodes are shared computing resources where users prepare and submit jobs to the cluster's compute nodes.
@@ -88,9 +90,9 @@ echo "Data root: $CAQRN_DATA_ROOT"
 You should see output similar to:
 
 ```
-Python virtual environment: /home/molina/caqrn-sandbox/venv
-Code root: /home/molina/caqrn-sandbox/code
-Data root: /home/molina/caqrn-sandbox/data
+Python virtual environment: /home/alice/caqrn-sandbox/venv
+Code root: /home/alice/caqrn-sandbox/code
+Data root: /home/alice/caqrn-sandbox/data
 ```
 
 ## 2. Manage project dependencies using pip
@@ -202,7 +204,7 @@ It explicitly exports your environment to be available to the process running on
 2. Check your job's status in the queue.  Replace the username below with your own to get a list of jobs submitted under your username from Slurm.
 
 ```bash
-squeue -u molina
+squeue -u alice
 ```
 
 The output shows your job details.
@@ -210,7 +212,7 @@ Notice that settings such as the compute partition and number of compute nodes f
 
 ```
 JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
-12345       dev molina_t   molina  R       2:34      4 node[01-04]
+12345       dev alice_t     alice  R       2:34      4 node[01-04]
 ```
 
 In general, test jobs should be submitted to the cluster's development partition (`dev`), which provides lower-cost, scaled-back compute resources appropriate for testing.
@@ -226,19 +228,19 @@ cd ~/caqrn-sandbox/logs/slurm
 4. Find the log file for your test job, which includes your username and the job ID:
 
 ```bash
-ls molina_test_daily_*
+ls alice_test_daily_*
 ```
 
-You should see a file like `molina_test_daily_20250101_12345.out`.
+You should see a file like `alice_test_daily_20250101_12345.out`.
 
 5. Monitor job progress by following the log file:
 
 ```bash
-tail -f molina_test_daily_20250101_12345.out
+tail -f alice_test_daily_20250101_12345.out
 ```
 
 The daily processing job can take up to 30 minutes to complete.
-Now is a good time for a coffee break!
+This is a good time for a coffee break!
 
 Your logging function will be called toward the end of execution.
 
@@ -248,9 +250,9 @@ Your logging function will be called toward the end of execution.
 +---------------------+------------------------------------------+
 | Variable            | Value                                    |
 +=====================+==========================================+
-| Virtual environment | /home/molina/caqrn-sandbox/venv          |
-| Code root path      | /home/molina/caqrn-sandbox/code          |
-| Data root path      | /home/molina/caqrn-sandbox/data          |
+| Virtual environment | /home/alice/caqrn-sandbox/venv          |
+| Code root path      | /home/alice/caqrn-sandbox/code          |
+| Data root path      | /home/alice/caqrn-sandbox/data          |
 | Input data path     | /projects/caqrn/shared/data/incoming     |
 +---------------------+------------------------------------------+
 ```
