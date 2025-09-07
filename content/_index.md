@@ -12,9 +12,9 @@ This portfolio contains sample documentation that demonstrates my approach to te
 The samples include a [how-to guide](/get-started/quickstart), a [tutorial](/get-started/hpc-tutorial), and a [reference document](/reference/environment-variables).
 
 As a developer, I've worked on scientific computing projects using high-performance computing resources.
-This work involved maintaining software distributed on HPC infrastructure, and helping new team members work confidently with the tools used in these settings.
+This work involved maintaining software distributed on HPC infrastructure, and teaching new team members how to work confidently with the tools used in these settings.
 
-I wanted to present samples that reflect my technical skill set and background, and showcase my experience writing to address practical needs in a production setting.
+I wanted to present samples that reflect my technical skill set and background, and showcase my experience writing to address the needs of software teams in production settings.
 I designed a fictitious software project—an air quality monitoring system maintained by a university research team—and created documentation covering developer onboarding in a setting where getting started can be challenging.
 
 ## How I built this site
@@ -36,5 +36,5 @@ You can view my full [research notes](https://github.com/nandstand/sample-site/t
 Research is a large part of the writing process.
 I wanted to show my approach, and offer transparency about the resources that I used when designing the scenario presented in this documentation.
 
-For the writing and editing part of the process, I used Microsoft's Writing Style Guide to achieve a consistent tone.
-I also used this project as an opportunity to learn and apply [Diátaxis](https://diataxis.fr/), which is an established approach to authoring and organizing technical documentation.
+I used Microsoft's Writing Style Guide when writing and proofreading content.
+I also used this project as an opportunity to learn and apply [Diátaxis](https://diataxis.fr/), which is a system for authoring and organizing technical documentation.
