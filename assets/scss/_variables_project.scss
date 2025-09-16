@@ -46,3 +46,8 @@ $body-color: #000000 !default;
     }
   }
 }
+
+// don't display lastmod info in footer
+.td-page-meta__lastmod {
+    display: none !important;
+}
