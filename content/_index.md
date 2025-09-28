@@ -36,5 +36,5 @@ You can view my full [research notes](https://github.com/nandstand/sample-site/t
 Research is a large part of the writing process.
 I wanted to show my approach, and offer transparency about the resources that I used when designing the scenario presented in this documentation.
 
-I used Microsoft's Writing Style Guide when writing and proofreading content.
-I also used this project as an opportunity to learn and apply [Diátaxis](https://diataxis.fr/), which is a system for authoring and organizing technical documentation.
+I used Microsoft's Writing Style Guide to write and proofread content.
+I used this project as an opportunity to learn and apply [Diátaxis](https://diataxis.fr/), which is a system for authoring and organizing technical documentation.
