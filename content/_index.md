@@ -11,7 +11,7 @@ no_list: true
 This portfolio contains sample documentation that demonstrates my approach to technical writing using modern documentation tools and techniques.
 The samples include a [how-to guide](/get-started/quickstart), a [tutorial](/get-started/hpc-tutorial), and a [reference document](/reference/environment-variables).
 
-In my previous role, I worked as a developer in a scientific computing setting, where I maintained software distributed on high-performance computing infrastructure, and taught new team members how to work confidently with HPC tools and workflows.
+In my previous role, I worked as a developer in a scientific computing setting, where I maintained software distributed on high-performance computing infrastructure, and taught new team members how to work confidently with the tools that we used.
 
 I wanted to present samples that reflect my technical skill set and background, and showcase my experience writing to address the needs of software teams in production settings.
 I designed a fictitious software project—an air quality monitoring system maintained by a university research team—and created documentation covering developer onboarding in a setting where getting started can be challenging.
