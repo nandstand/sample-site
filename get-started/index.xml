@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Get started on Portfolio / Christian Fuller</title><link>https://portfolio.christianf.io/get-started/</link><description>Recent content in Get started on Portfolio / Christian Fuller</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://portfolio.christianf.io/get-started/index.xml" rel="self" type="application/rss+xml"/><item><title>Quickstart</title><link>https://portfolio.christianf.io/get-started/quickstart/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://portfolio.christianf.io/get-started/quickstart/</guid><description>&lt;div class="alert alert-success" role="alert">
+
+
+ &lt;p>This writing sample outlines a procedure for setting up a development environment.
+It touches on common development topics like managing repositories with Git, and installing dependencies using Python virtual environments and pip.&lt;/p>
+&lt;p>Clear instructions for getting started on a project can make a world of difference.
+Developers can usually figure out how to do these kinds of things on their own, but having a standard procedure can prevent headaches and confusion down the road.
+It&amp;rsquo;s easier to help someone who is just starting out if everyone is on the same page!&lt;/p></description></item><item><title>Develop and test your first feature on the HPC cluster</title><link>https://portfolio.christianf.io/get-started/hpc-tutorial/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://portfolio.christianf.io/get-started/hpc-tutorial/</guid><description>&lt;div class="alert alert-success" role="alert">
+
+
+ &lt;p>This tutorial covers HPC-specific topics and tools, like working with a batch scheduler (Slurm).
+It&amp;rsquo;s designed to help the reader build a general understanding of how software runs on HPC architecture, and teach best practices for feature development, including adding new project dependencies.&lt;/p>
+&lt;p>This sample is partly inspired by work that I did in a previous role to help onboard new team members to a project, where I taught Git workflows and helped developers set up their environments.&lt;/p></description></item></channel></rss>
