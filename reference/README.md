@@ -1,6 +1,8 @@
 # Reference
 
-This directory contains informal research notes and reference scripts that I used to write the samples in this repository.
+This directory contains research notes and reference scripts that I used to write the sample documentation in this repository. 
+
+The scripts in this directory are samples, and are meant to represent the kind of scripts that I've worked with as a developer supporting scientific computing projects in a previous role. These sample scripts are based on publicly available HPC provider documentation and open source scientific computing projects (see `sources.md`).
 
 ## Contents
 
