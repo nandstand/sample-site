@@ -22,7 +22,7 @@ You'll test the feature by submitting a job to be run on the HPC cluster's compu
 
 ### What you'll need
 
-- A sandbox environment on the Zephyr cluster (see the [Quickstart](/get-started/quickstart/))
+- A sandbox environment on the Zephyr cluster (see the [Quickstart](/technical-writing/get-started/quickstart/))
 - Familiarity with Git
 - Familiarity with Python virtual environments
 
@@ -148,13 +148,13 @@ In this section, you'll implement the logging feature by adding code to an exist
 1. Navigate to the logging utilities module:
 
 ```bash
-cd ~/caqrn-sandbox/code/caqrn-processing/caqrn_processor
+cd ~/caqrn-sandbox/code/caqrn-processing/src
 ```
 
-2. Open the `log_utils.py` file in your preferred editor:
+2. Open the `utils.py` file in your preferred editor:
 
 ```bash
-vim log_utils.py
+vim utils.py
 ```
 
 3. Add the import statement for `tabulate` to the top of the file, after the existing imports:
@@ -292,4 +292,4 @@ In normal development, you'll create feature branches from the `develop` branch,
 
 ### Learn more
 
-- See [Environment variables](/reference/environment-variables) for more information about your sandbox and the production environment.
+- See [Environment variables](/technical-writing/reference/environment-variables) for more information about your sandbox and the production environment.

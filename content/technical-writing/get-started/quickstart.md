@@ -11,10 +11,6 @@ weight: 5
 This writing sample outlines a procedure for setting up a development environment.
 It touches on common development topics like managing repositories with Git, and installing dependencies using Python virtual environments and pip.
 
-Clear instructions for getting started on a project can make a world of difference.
-Developers can usually figure out how to do these kinds of things on their own, but having a standard procedure can prevent headaches and confusion down the road.
-It's easier to help someone who is just starting out if everyone is on the same page!
-
 {{% /alert %}}
 
 ## What you'll set up
