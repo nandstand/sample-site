@@ -129,4 +129,4 @@ You now have an isolated sandbox where you can make code changes, install and up
 
 ## Next steps
 
-- [Develop and test your first feature on the HPC cluster](/get-started/hpc-tutorial/)
+- [Develop and test your first feature on the HPC cluster](/technical-writing/get-started/hpc-tutorial/)

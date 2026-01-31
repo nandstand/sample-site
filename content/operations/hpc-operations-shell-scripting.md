@@ -59,4 +59,4 @@ Full scripts: [submit_daily_job.sh](https://github.com/nandstand/sample-site/blo
 
 I based the project architecture on documentation from [Stanford's Sherlock cluster](https://www.sherlock.stanford.edu/docs/), [USC's CARC](https://www.carc.usc.edu/user-guides), and other university HPC providers. See the full list of [sources](https://github.com/nandstand/sample-site/blob/main/reference/sources.md). Building these samples gave me a chance to learn Slurm (my previous work used a different scheduler) and dig deeper into Python virtual environment behavior in distributed contexts.
 
-The [documentation samples](/docs/) on this site are written for this fictional project. I designed the scripts first, then wrote documentation explaining how to use them — the same way I worked on the job.
+The [documentation samples](/technical-writing/) on this site are written for this fictional project. I designed the scripts first, then wrote documentation explaining how to use them — the same way I worked on the job.
