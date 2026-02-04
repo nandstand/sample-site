@@ -1,7 +1,7 @@
 ---
 title: 'Technical writing'
 linkTitle: 'Technical writing'
-description: ''
+description: 'These samples demonstrate my technical writing skillset'
 type: 'docs'
 weight: 20
 simple_list: false
