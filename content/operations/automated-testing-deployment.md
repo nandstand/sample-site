@@ -6,17 +6,22 @@ type: 'docs'
 weight: 20
 ---
 
-I have experience managing software deployments and maintaining build processes. In a previous role, I handled deployments to production servers and coordinated releases across environments.
+In my previous role, one of my responsibilities was managing the deployment of updates to my primary software project.
+I managed the deployment of code changes that I wrote myself, and coordinated with teammates to get their changes merged in.
 
-After leaving that position, I wanted hands-on experience with modern CI/CD tooling — specifically GitHub Actions and automated content quality checks. This site's pipeline is the result: automated builds, content validation, and deployment to GitHub Pages, with quality checks that run on every pull request and after every deployment.
+After leaving that role, I was interested in learning modern tools and techniques for handling this process.
+I taught myself GitHub Actions and developed a CI/CD pipeline that tests and deploys the site as changes are made.
+I also used this as an opportunity to get more hands-on experience with GitHub's pull request workflow by implementing CI tests for every merge into main.
 
 ---
 
 ## What I built
 
-Two GitHub Actions workflows that handle the full lifecycle from pull request to production:
+Two GitHub Actions workflows that handle building, testing, and deploying the live site.
 
 **CI workflow** — Runs on every pull request. Builds the site, lints all Markdown content, and validates links by spinning up a local server and checking against it.
+
+Full workflow file: [ci.yml](https://github.com/nandstand/sample-site/blob/main/.github/workflows/ci.yml)
 
 ```mermaid
 flowchart LR
@@ -43,6 +48,8 @@ flowchart LR
 ```
 
 **Deploy workflow** — Runs on push to `main`. Builds and deploys the site, then validates links against the live production URL to confirm the deployment succeeded.
+
+Full workflow file: [deploy.yml](https://github.com/nandstand/sample-site/blob/main/.github/workflows/deploy.yml)
 
 ```mermaid
 flowchart LR
@@ -85,15 +92,5 @@ All content is checked against a customized [markdownlint](https://github.com/Da
 
 Broken links are caught automatically using [Lychee](https://github.com/lycheeverse/lychee). The approach differs between CI and deploy:
 
-- **CI** — Spins up a local HTTP server and checks links against the built site. Fast feedback without depending on external services.
-- **Deploy** — After publishing, checks links against the live production URL. Confirms the deployment worked and catches issues that only appear in production.
-
----
-
-## Configuration
-
-| File | Purpose |
-|------|---------|
-| [ci.yml](https://github.com/nandstand/sample-site/blob/main/.github/workflows/ci.yml) | CI workflow |
-| [deploy.yml](https://github.com/nandstand/sample-site/blob/main/.github/workflows/deploy.yml) | Deploy workflow |
-| [.markdownlint.yaml](https://github.com/nandstand/sample-site/blob/main/.markdownlint.yaml) | Linting rules |
+- **CI** — Spins up a local HTTP server and checks links against the built site.
+- **Deploy** — After publishing, checks links against the live production URL. 
