@@ -6,15 +6,18 @@ type: 'docs'
 weight: 10
 ---
 
-In a previous role, I worked on a scientific computing team where I maintained and deployed software on a high-performance computing (HPC) cluster. Day to day, this involved working with shell scripts that configured environments and orchestrated batch jobs — writing new scripts, troubleshooting failures, and helping teammates get set up.
+In my previous role, I worked with scripts daily -- mostly shell scripts and Perl.
+I helped new teammates configure their environments for development and worked with batch job submission scripts like the samples here.
 
-The sample scripts in this repository represent that kind of work. I designed a fictional project architecture based on public university HPC documentation and wrote scripts that reflect the patterns I worked with on the job.
+Since I can't share that work directly, I designed these samples using public university HPC documentation as a basis, using this as an exercise to practice designing deployment architecture.
+
+In researching to develop these sample scripts, I taught myself how to work with Slurm and Python virtual environments, and dug into HPC documentation to understand how virtual environments would work in a distributed context.
 
 ---
 
 ## Environment configuration
 
-On the job, I helped onboard developers and standardize how teammates configured their local environments. The environment scripts here represent that work — setting up paths, activating Python virtual environments, and configuring scheduler parameters.
+On the job, I helped onboard developers and standardize how teammates configured their local environments. The environment scripts here represent that work.
 
 ```bash
 # Activate Python virtual environment
@@ -39,7 +42,7 @@ Full scripts: [sandbox_env.sh](https://github.com/nandstand/sample-site/blob/mai
 
 ## Job orchestration
 
-Submitting and managing batch jobs was routine operational work — monitoring queues, tracking down why jobs failed, fixing scripts. The job scripts here handle submission and execution on a Slurm cluster.
+Submitting and managing batch jobs was a large part of the role — monitoring queues, tracking down why jobs failed, maintaining scripts. The job scripts here handle submission and execution via Slurm, which is a different batch scheduler than the one that I used on the job.
 
 ```bash
 # Submit job with environment-specific settings
@@ -52,11 +55,3 @@ sbatch \
 ```
 
 Full scripts: [submit_daily_job.sh](https://github.com/nandstand/sample-site/blob/main/reference/submit_daily_job.sh), [processing_job.sh](https://github.com/nandstand/sample-site/blob/main/reference/processing_job.sh)
-
----
-
-## Background
-
-I based the project architecture on documentation from [Stanford's Sherlock cluster](https://www.sherlock.stanford.edu/docs/), [USC's CARC](https://www.carc.usc.edu/user-guides), and other university HPC providers. See the full list of [sources](https://github.com/nandstand/sample-site/blob/main/reference/sources.md). Building these samples gave me a chance to learn Slurm (my previous work used a different scheduler) and dig deeper into Python virtual environment behavior in distributed contexts.
-
-The [documentation samples](/technical-writing/) on this site are written for this fictional project. I designed the scripts first, then wrote documentation explaining how to use them — the same way I worked on the job.
