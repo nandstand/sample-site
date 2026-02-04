@@ -1,7 +1,7 @@
 ---
 title: 'Develop and test your first feature on the HPC cluster'
 linkTitle: 'Develop and test your first feature on the HPC cluster'
-description: 'Learn how to navigate the project codebase and submit test jobs from your sandbox environment.'
+description: 'Learn how to navigate the project codebase and submit test jobs from your sandbox environment'
 type: 'docs'
 weight: 10
 ---

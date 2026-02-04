@@ -1,7 +1,7 @@
 ---
 title: 'Quickstart'
 linkTitle: 'Quickstart'
-description: 'Set up your sandbox for development on the HPC cluster in under 10 minutes.'
+description: 'Set up your sandbox for development on the HPC cluster in under 10 minutes'
 type: 'docs'
 weight: 5
 ---
