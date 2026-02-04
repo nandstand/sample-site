@@ -93,4 +93,4 @@ All content is checked against a customized [markdownlint](https://github.com/Da
 Broken links are caught automatically using [Lychee](https://github.com/lycheeverse/lychee). The approach differs between CI and deploy:
 
 - **CI** — Spins up a local HTTP server and checks links against the built site.
-- **Deploy** — After publishing, checks links against the live production URL. 
+- **Deploy** — After publishing, checks links against the live production URL.
