@@ -42,7 +42,7 @@ Full scripts: [sandbox_env.sh](https://github.com/nandstand/sample-site/blob/mai
 
 ## Job orchestration
 
-Submitting and managing batch jobs was a large part of the role — monitoring queues, tracking down why jobs failed, maintaining scripts. The job scripts here handle submission and execution via Slurm, which is a different batch scheduler than the one that I used on the job.
+Submitting and managing batch jobs was a large part of the role: monitoring queues, tracking down why jobs failed, and maintaining scripts. The job scripts here handle submission and execution via Slurm, which is a different batch scheduler than the one that I used on the job.
 
 ```bash
 # Submit job with environment-specific settings
