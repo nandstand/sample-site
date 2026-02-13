@@ -10,7 +10,7 @@ This portfolio contains samples that represent my professional experience suppor
 
 There are two sections that represent my operational work experience:
 
-- [HPC operations and shell scripting](/operations/hpc-operations-shell-scripting/) -- samples that showcase my experience managing batch jobs and configuring environments in a distributed context
+- [HPC operations and shell scripting](/operations/hpc-operations-shell-scripting/) -- samples that showcase my experience managing batch jobs and working with software deployed on HPC architecture
 - [Automated testing and deployment](/operations/automated-testing-deployment/) -- an overview of the CI/CD pipeline that I developed for testing and deploying this site, a project that I used to continue building on the deployment management skills from my previous role
 
 The technical writing samples include a [how-to guide](technical-writing/get-started/quickstart), a [tutorial](technical-writing/get-started/hpc-tutorial), and a [reference document](technical-writing/reference/environment-variables).
@@ -19,16 +19,9 @@ The technical writing samples include a [how-to guide](technical-writing/get-sta
 
 In my previous role, I worked as a developer in a scientific computing setting, where I was part of a team that maintained oceanographic software on an HPC cluster.
 
-Most of the work that I did was operational.
-I supported remote sensor data processing applications end-to-end, from data ingest to product delivery.
-I spent a lot of time working with batch job scripts, troubleshooting production issues, and tracking down issues on a distributed system.
-I wrote shell scripts to automate routine tasks and developed a custom troubleshooting and monitoring tool during my time there.
+Along with development work, I helped support day-to-day operations and service availability to customers, and contributed to documentation across multiple projects.
 
-I also did a lot of technical writing.
-Every issue I solved, I made an effort to document and share the fix.
-I helped fill in gaps in onboarding documentation, and wrote guides and shared environment scripts with teammates to help them get started.
-
-Due to the nature of the work, I can't share examples from that role directly.
+I can't share samples of this work directly.
 To get around this, I designed a fictional software project - an air quality monitoring system maintained by a university research team - and created sample scripts and documentation that demonstrate my skillset. The samples are based on publicly available HPC documentation from providers like Stanford, USC, and the University of Arizona.
 
 ## How I built this site
