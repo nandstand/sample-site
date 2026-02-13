@@ -6,12 +6,11 @@ type: 'docs'
 weight: 10
 ---
 
-In my previous role, I worked with scripts daily -- mostly shell scripts and Perl.
-I helped new teammates configure their environments for development and worked with batch job submission scripts like the samples here.
+These sample scripts represent two aspects of the work that I did as a developer in an HPC setting: environment configuration and job orchestration.
 
-Since I can't share that work directly, I designed these samples using public university HPC documentation as a basis, using this as an exercise to practice designing deployment architecture.
+I developed these scripts from scratch, using this as an opportunity to practice designing the deployment architecture for an HPC-based project.
 
-In researching to develop these sample scripts, I taught myself how to work with Slurm and Python virtual environments, and dug into HPC documentation to understand how virtual environments would work in a distributed context.
+In researching to develop these samples, I taught myself how to work with Slurm and Python virtual environments, and dug into university HPC documentation to understand how virtual environments would work in a distributed context.
 
 ---
 
@@ -42,7 +41,9 @@ Full scripts: [sandbox_env.sh](https://github.com/nandstand/sample-site/blob/mai
 
 ## Job orchestration
 
-Submitting and managing batch jobs was a large part of the role: monitoring queues, tracking down why jobs failed, and maintaining scripts. The job scripts here handle submission and execution via Slurm, which is a different batch scheduler than the one that I used on the job.
+I maintained scripts that orchestrated batch jobs via a batch scheduler, along with monitoring and troubleshooting the jobs in queue.
+
+The job scripts here handle submission and execution via Slurm, which is a different batch scheduler than the one that I used on the job.
 
 ```bash
 # Submit job with environment-specific settings
