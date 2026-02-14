@@ -19,7 +19,7 @@ The technical writing samples include a [how-to guide](technical-writing/get-sta
 
 In my previous role, I worked as a developer in a scientific computing setting, where I was part of a team that maintained oceanographic software on an HPC cluster.
 
-Along with development work, I helped support day-to-day operations and service availability to customers, and contributed to documentation across multiple projects.
+Along with development work, I helped support day-to-day operations and delivery to customers, and contributed to documentation across multiple projects.
 
 I can't share samples of this work directly.
 To get around this, I designed a fictional software project - an air quality monitoring system maintained by a university research team - and created sample scripts and documentation that demonstrate my skillset. The samples are based on publicly available HPC documentation from providers like Stanford, USC, and the University of Arizona.
