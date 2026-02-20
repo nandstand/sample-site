@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Welcome on Portfolio / Christian Fuller</title><link>https://portfolio.christianf.io/</link><description>Recent content in Welcome on Portfolio / Christian Fuller</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://portfolio.christianf.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Quickstart</title><link>https://portfolio.christianf.io/technical-writing/get-started/quickstart/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://portfolio.christianf.io/technical-writing/get-started/quickstart/</guid><description>&lt;div class="alert alert-success" role="alert">
+
+
+ This writing sample outlines a procedure for setting up a development environment.
+It touches on common development topics like managing repositories with Git, and installing dependencies using Python virtual environments and pip.
+
+&lt;/div>
+
+&lt;h2 id="what-youll-set-up">What you&amp;rsquo;ll set up&lt;/h2>
+&lt;p>A personal sandbox environment for developing, testing, and running HPC jobs on the university&amp;rsquo;s Zephyr cluster.
+You&amp;rsquo;ll set up directories, clone repositories, and create an isolated Python environment.&lt;/p>
+&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
+&lt;p>Before you start, you&amp;rsquo;ll need:&lt;/p></description></item><item><title>Develop and test your first feature on the HPC cluster</title><link>https://portfolio.christianf.io/technical-writing/get-started/hpc-tutorial/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://portfolio.christianf.io/technical-writing/get-started/hpc-tutorial/</guid><description>&lt;div class="alert alert-success" role="alert">
+
+
+ &lt;p>This tutorial covers HPC-specific topics and tools, like working with a batch scheduler (Slurm).
+It&amp;rsquo;s designed to help the reader build a general understanding of how software runs on HPC architecture, and teach best practices for feature development, including adding new project dependencies.&lt;/p>
+&lt;p>This sample is partly inspired by work that I did in a previous role to help onboard new team members to a project, where I taught Git workflows and helped developers set up their environments.&lt;/p></description></item><item><title>HPC operations and shell scripting</title><link>https://portfolio.christianf.io/operations/hpc-operations-shell-scripting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://portfolio.christianf.io/operations/hpc-operations-shell-scripting/</guid><description>&lt;p>These sample scripts represent two aspects of the work that I did as a developer in an HPC setting: environment configuration and job orchestration.&lt;/p>
+&lt;p>I developed these scripts from scratch, using this as an opportunity to practice designing the deployment architecture for an HPC-based project.&lt;/p>
+&lt;p>In researching to develop these samples, I taught myself how to work with Slurm and Python virtual environments, and dug into university HPC documentation to understand how virtual environments would work in a distributed context.&lt;/p></description></item><item><title>Automated testing and deployment</title><link>https://portfolio.christianf.io/operations/automated-testing-deployment/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://portfolio.christianf.io/operations/automated-testing-deployment/</guid><description>&lt;p>In my previous role, one of my responsibilities was managing the deployment of updates to my primary software project.
+I managed the deployment of code changes that I wrote myself, and coordinated with teammates to get their changes merged in.&lt;/p>
+&lt;p>After leaving that role, I was interested in learning modern tools and techniques for handling this process.
+I taught myself GitHub Actions and developed a CI/CD pipeline that tests and deploys the site as changes are made.
+I also used this as an opportunity to get more hands-on experience with GitHub&amp;rsquo;s pull request workflow by implementing CI tests for every merge into main.&lt;/p></description></item><item><title>Environment variables</title><link>https://portfolio.christianf.io/technical-writing/reference/environment-variables/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://portfolio.christianf.io/technical-writing/reference/environment-variables/</guid><description>&lt;div class="alert alert-success" role="alert">
+
+
+ &lt;p>To render a diagram on this page from a single source file, I used Mermaid and a custom Hugo shortcode.
+I modified a Docsy theme shortcode to support rendering tables within tab panes for the quick reference at the top of the page.&lt;/p>
+&lt;p>You can view the source for each of these in the site&amp;rsquo;s GitHub repository. See the &lt;a href="https://github.com/nandstand/sample-site/blob/main/diagrams/python-venv-flow.mmd">diagram&amp;rsquo;s source file&lt;/a>, the &lt;a href="https://github.com/nandstand/sample-site/blob/main/layouts/shortcodes/mermaid.html">shortcode used to render it&lt;/a>, and the &lt;a href="https://github.com/nandstand/sample-site/blob/main/layouts/shortcodes/tabpane.html">modified version of Docsy&amp;rsquo;s tabpane shortcode&lt;/a>.&lt;/p></description></item></channel></rss>
