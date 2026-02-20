@@ -6,7 +6,7 @@ type: 'docs'
 no_list: true
 ---
 
-This portfolio contains samples that represent my professional experience supporting production software and promoting team knowledge share through documentation.
+This portfolio contains samples that represent my professional experience supporting production software and promoting knowledge share through documentation.
 
 There are two sections that represent my operational work experience:
 
